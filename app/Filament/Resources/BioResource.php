@@ -61,7 +61,6 @@ class BioResource extends Resource
     {
         return [
             'index' => Pages\ListBios::route('/'),
-            'create' => Pages\CreateBio::route('/create'),
             'edit' => Pages\EditBio::route('/{record}/edit'),
         ];
     }
