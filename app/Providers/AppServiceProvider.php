@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Filament\Resources\PositionResource;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationBuilder;
 use Filament\Navigation\NavigationItem;
@@ -36,6 +37,7 @@ class AppServiceProvider extends ServiceProvider
                     ->activeIcon('heroicon-s-user-circle')
                     ->isActiveWhen(fn(): bool => request()->routeIs('filament.resources.bios.*'))
                     ->url(route('filament.resources.bios.view', 1)),
+                ...PositionResource::getNavigationItems()
             ]);
         });
 
