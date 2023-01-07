@@ -34,8 +34,8 @@ class AppServiceProvider extends ServiceProvider
                 NavigationItem::make('Bio')
                     ->icon('heroicon-o-user-circle')
                     ->activeIcon('heroicon-s-user-circle')
-                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.resources.bios.edit'))
-                    ->url(route('filament.resources.bios.edit', 1)),
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.resources.bios.*'))
+                    ->url(route('filament.resources.bios.view', 1)),
             ]);
         });
 

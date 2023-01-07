@@ -19,6 +19,8 @@ class BioResource extends Resource
     protected static ?string $model = Bio::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-user-circle';
+    protected static ?string $pluralModelLabel = 'Bio';
+
 
     public static function form(Form $form): Form
     {
@@ -62,6 +64,7 @@ class BioResource extends Resource
         return [
             'index' => Pages\ListBios::route('/'),
             'edit' => Pages\EditBio::route('/{record}/edit'),
+            'view' => Pages\ViewBio::route('/{record}')
         ];
     }
 }
