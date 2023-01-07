@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Filament\Resources\EducationResource;
+use App\Filament\Resources\GalleryResource;
 use App\Filament\Resources\PositionResource;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationBuilder;
@@ -39,7 +40,8 @@ class AppServiceProvider extends ServiceProvider
                     ->isActiveWhen(fn(): bool => request()->routeIs('filament.resources.bios.*'))
                     ->url(route('filament.resources.bios.view', 1)),
                 ...PositionResource::getNavigationItems(),
-                ...EducationResource::getNavigationItems()
+                ...EducationResource::getNavigationItems(),
+                ...GalleryResource::getNavigationItems(),
             ]);
         });
 
