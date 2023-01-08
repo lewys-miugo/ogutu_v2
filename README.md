@@ -32,4 +32,7 @@ php artisan key:generate
 ``` 
 php artisan migrate --seed
 ```
-
+7. Incase of error run:
+```
+composer update --no-scripts
+```
