@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Filament\Resources\ContactResource;
 use App\Filament\Resources\EducationResource;
 use App\Filament\Resources\GalleryResource;
 use App\Filament\Resources\InterestResource;
@@ -43,7 +44,8 @@ class AppServiceProvider extends ServiceProvider
                 ...PositionResource::getNavigationItems(),
                 ...EducationResource::getNavigationItems(),
                 ...GalleryResource::getNavigationItems(),
-                ...InterestResource::getNavigationItems()
+                ...InterestResource::getNavigationItems(),
+                ...ContactResource::getNavigationItems(),
             ]);
         });
 
