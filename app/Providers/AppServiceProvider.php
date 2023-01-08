@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Filament\Resources\EducationResource;
 use App\Filament\Resources\GalleryResource;
+use App\Filament\Resources\InterestResource;
 use App\Filament\Resources\PositionResource;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationBuilder;
@@ -42,6 +43,7 @@ class AppServiceProvider extends ServiceProvider
                 ...PositionResource::getNavigationItems(),
                 ...EducationResource::getNavigationItems(),
                 ...GalleryResource::getNavigationItems(),
+                ...InterestResource::getNavigationItems()
             ]);
         });
 
