@@ -9,6 +9,7 @@ use App\Filament\Resources\GalleryResource;
 use App\Filament\Resources\InterestResource;
 use App\Filament\Resources\InternalReflectionResource;
 use App\Filament\Resources\PositionResource;
+use App\Filament\Resources\PublicationResource;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationBuilder;
 use Filament\Navigation\NavigationItem;
@@ -49,7 +50,8 @@ class AppServiceProvider extends ServiceProvider
                 ...InterestResource::getNavigationItems(),
                 ...ContactResource::getNavigationItems(),
                 ...InternalReflectionResource::getNavigationItems(),
-                ...ExternalReflectionResource::getNavigationItems()
+                ...ExternalReflectionResource::getNavigationItems(),
+                ...PublicationResource::getNavigationItems()
             ]);
         });
 
