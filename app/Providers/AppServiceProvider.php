@@ -7,6 +7,7 @@ use App\Filament\Resources\EducationResource;
 use App\Filament\Resources\ExternalReflectionResource;
 use App\Filament\Resources\GalleryResource;
 use App\Filament\Resources\InterestResource;
+use App\Filament\Resources\InternalPublicationResource;
 use App\Filament\Resources\InternalReflectionResource;
 use App\Filament\Resources\PositionResource;
 use App\Filament\Resources\PublicationResource;
@@ -51,6 +52,7 @@ class AppServiceProvider extends ServiceProvider
                 ...ContactResource::getNavigationItems(),
                 ...InternalReflectionResource::getNavigationItems(),
                 ...ExternalReflectionResource::getNavigationItems(),
+                ...InternalPublicationResource::getNavigationItems(),
                 ...PublicationResource::getNavigationItems()
             ]);
         });
