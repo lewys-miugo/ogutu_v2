@@ -15,7 +15,7 @@ class ExternalReflectionResource extends Resource
 {
     protected static ?string $model = ExternalReflection::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-collection';
+    protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
     public static function form(Form $form): Form
     {

@@ -4,13 +4,13 @@ namespace App\Providers;
 
 use App\Filament\Resources\ContactResource;
 use App\Filament\Resources\EducationResource;
+use App\Filament\Resources\ExternalPublicationResource;
 use App\Filament\Resources\ExternalReflectionResource;
 use App\Filament\Resources\GalleryResource;
 use App\Filament\Resources\InterestResource;
 use App\Filament\Resources\InternalPublicationResource;
 use App\Filament\Resources\InternalReflectionResource;
 use App\Filament\Resources\PositionResource;
-use App\Filament\Resources\PublicationResource;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationBuilder;
 use Filament\Navigation\NavigationItem;
@@ -53,7 +53,7 @@ class AppServiceProvider extends ServiceProvider
                 ...InternalReflectionResource::getNavigationItems(),
                 ...ExternalReflectionResource::getNavigationItems(),
                 ...InternalPublicationResource::getNavigationItems(),
-                ...PublicationResource::getNavigationItems()
+                ...ExternalPublicationResource::getNavigationItems()
             ]);
         });
 

@@ -2,18 +2,18 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\InternalPublicationResource\Pages;
-use App\Filament\Resources\InternalPublicationResource\RelationManagers;
-use App\Models\InternalPublication;
+use App\Filament\Resources\ExternalPublicationResource\Pages;
+use App\Filament\Resources\ExternalPublicationResource\RelationManagers;
+use App\Models\ExternalPublication;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
 use Filament\Resources\Table;
 use Filament\Tables;
 
-class InternalPublicationResource extends Resource
+class ExternalPublicationResource extends Resource
 {
-    protected static ?string $model = InternalPublication::class;
+    protected static ?string $model = ExternalPublication::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-book-open';
 
@@ -30,7 +30,7 @@ class InternalPublicationResource extends Resource
                         ]),
                     Forms\Components\TextInput::make('title'),
                     Forms\Components\FileUpload::make('image'),
-                    Forms\Components\RichEditor::make('content')
+                    Forms\Components\TextInput::make('link')
                 ])
             ]);
     }
@@ -49,25 +49,17 @@ class InternalPublicationResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
 
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
-    }
-
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListInternalPublications::route('/'),
-            'create' => Pages\CreateInternalPublication::route('/create'),
-            'edit' => Pages\EditInternalPublication::route('/{record}/edit'),
+            'index' => Pages\ManageExternalPublications::route('/'),
         ];
     }
 }
