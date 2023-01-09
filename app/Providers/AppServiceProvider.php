@@ -6,6 +6,7 @@ use App\Filament\Resources\ContactResource;
 use App\Filament\Resources\EducationResource;
 use App\Filament\Resources\GalleryResource;
 use App\Filament\Resources\InterestResource;
+use App\Filament\Resources\InternalReflectionResource;
 use App\Filament\Resources\PositionResource;
 use Filament\Facades\Filament;
 use Filament\Navigation\NavigationBuilder;
@@ -46,6 +47,7 @@ class AppServiceProvider extends ServiceProvider
                 ...GalleryResource::getNavigationItems(),
                 ...InterestResource::getNavigationItems(),
                 ...ContactResource::getNavigationItems(),
+                ...InternalReflectionResource::getNavigationItems()
             ]);
         });
 
