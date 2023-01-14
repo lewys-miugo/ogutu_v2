@@ -25,7 +25,7 @@
              alt="">
              <!-- $bio->iimage  -->
 
-        <!-- Animated text -->
+        <!-- Animated text -->  
         <div
             class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-38 xl:text-7xl font-bold">
             <span class="text-white">Prof.</span>
@@ -40,13 +40,13 @@
             <div class=" lg:w-1/3">
                 <div class="flex flex-col justify-center items-center">
                     <!-- h-fit w-fit object-fit  -->
-                    <img class="rounded-full"
-                         src="{{ $bio->picture}}"
-                         alt="">
-                    @foreach($position as $position)
-                    <p class="m-1 font-black">{{$position->title}},</p>
-                    <p class="m-1 font-black text-gray-500">{{$position->institution}}.</p>
-                    @endforeach
+                        <img class="rounded-full"
+                            src="{{ $bio->picture}}"
+                            alt="">
+                        @foreach($position as $position)
+                        <p class="m-1 font-black">{{$position->title}},</p>
+                        <p class="m-1 font-black text-gray-500">{{$position->institution}}.</p>
+                        @endforeach
                     
 
                     <div class="flex flex-col text-center gap-6 py-3">

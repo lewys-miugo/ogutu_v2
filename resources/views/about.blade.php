@@ -43,67 +43,74 @@
             <h1 class="text-indigo-600 text-center pb-6 font-bold text-2xl">About Me</h1>
 
         </div>
-
+<!-- max-w-7xl mx-auto grid grid-cols-12  -->
         <div class="">
-            <div class="max-w-7xl mx-auto grid grid-cols-12">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12">
                 <div class="col-span-3 flex flex-col justify-center items-center">
                     <h2 class="font-bold text-indigo-600 text-xl">Education</h2>
-                            <ol class="">
-                                
-                                <ul class="py-3">
-                                    <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
-                                    MA in Political Science,2007
-                                    </li>
-                                    <li class="px-5 ">UON</li>
-                                </ul>
-                                <ul class="py-3">
-                                    <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
-                                    MA in Political Science,2007
-                                    </li>
-                                    <li class="px-5 ">UON</li>
-                                </ul>
-                                <ul class="py-3">
-                                    <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
-                                    MA in Political Science,2007
-                                    </li>
-                                    <li class="px-5 ">UON</li>
-                                </ul>
-                                <ul class="py-3">
-                                    <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
-                                    MA in Political Science,2007
-                                    </li>
-                                    <li class="px-5 ">UON</li>
-                                </ul>
-                                
-                            </ol>
+                    <ol class="">
+
+                    @foreach($education as $education)
+                                <ul class="py-0 m-0">
+                                <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion}}</li>
+                                <li class="px-5 ">{{$education->institution}}</li>
+                            </ul>
+                    @endforeach 
+                        
+                    <ul class="py-3">
+                        <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
+                        MA in Political Science,2007
+                        </li>
+                        <li class="px-5 ">UON</li>
+                    </ul>
+                    <ul class="py-3">
+                        <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
+                        MA in Political Science,2007
+                        </li>
+                        <li class="px-5 ">UON</li>
+                    </ul>
+                    <ul class="py-3">
+                        <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
+                        MA in Political Science,2007
+                        </li>
+                        <li class="px-5 ">UON</li>
+                    </ul>
+                    <ul class="py-3">
+                        <li class="font-bold text-gray-700"><span><ion-icon name="school"></ion-icon></span> 
+                        MA in Political Science,2007
+                        </li>
+                        <li class="px-5 ">UON</li>
+                    </ul>
+                        
+                    </ol>
                 </div>
                 <div class="col-span-6 flex flex-col justify-center items-center ">
-                    <img class="h-96 w-96 rounded-full"
-                         src="{{ url('/images/i3.jpeg')}}"
+                    <img class="rounded-full"
+                         src="{{ $bio->picture}}"
                          alt="">
-                    <p class="m-1 font-black">International Business & Trade Specialist,</p>
-                    <p class="m-1 font-black">Econalis Group LLC.</p>
-                    <p class="m-1 font-black">Assistant Prof. International Business & Trade,</p>
-                    <p class="m-1 font-black">African Leadership University.</p>
+                    @foreach($position as $position)
+                    <p class="m-1 font-black">{{$position->title}},</p>
+                    <p class="m-1 font-black text-gray-500">{{$position->institution}}.</p>
+                    @endforeach
                 </div>
                 <div class="col-span-3 flex flex-col justify-center items-center">
                     <div class="px-6">
-                            <h2 class="font-bold text-indigo-600  text-xl">Interests</h2>
+                        <h2 class="font-bold text-indigo-600  text-xl">Interests</h2>
 
-                            <ol class="py-3 list-disc">
-                                
-                                <li class="text-gray-700">The Global Political Economy</li> 
-                                <li class="text-gray-700">Global Sustainability</li>
-                                <li class="text-gray-700">Trade and Sustainable Development</li>
-                                <li class="text-gray-700">Social Innovation and Entrepreneurship</li>
-                                <li class="text-gray-700">Education in Africa</li>
-                                <li class="text-gray-700">Leadership Development in Africa</li>
-                                <li class="text-gray-700">Regional Integration in Africa</li>
-                                <li class="text-gray-700">US / EU  – Africa Relations.</li>
-                                <li class="text-gray-700">Hiking </li>
-                                
-                            </ol>
-                        </div>
+                        <ol class="py-3 list-disc">
+                            
+                            <li class="text-gray-700">The Global Political Economy</li> 
+                            <li class="text-gray-700">Global Sustainability</li>
+                            <li class="text-gray-700">Trade and Sustainable Development</li>
+                            <li class="text-gray-700">Social Innovation and Entrepreneurship</li>
+                            <li class="text-gray-700">Education in Africa</li>
+                            <li class="text-gray-700">Leadership Development in Africa</li>
+                            <li class="text-gray-700">Regional Integration in Africa</li>
+                            <li class="text-gray-700">US / EU  – Africa Relations.</li>
+                            <li class="text-gray-700">Hiking </li>
+                            
+                        </ol>
+                    </div>
                 </div>
             </div>
         </div>

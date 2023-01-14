@@ -36,9 +36,15 @@ Route::get('/', function () {
 });
 
 Route::get('about',function() {
+    $bio = Bio::first();
+    $position=Position::all();
+    $education=Education::all();
     $contact=Contact::all();
 
     return view('about',[
+        'bio' => $bio,
+        'position'=>$position,
+        'education'=>$education,
         'contact'=>$contact,
 
     ]);
