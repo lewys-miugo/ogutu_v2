@@ -15,9 +15,7 @@ return new class extends Migration {
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
             $table->string('type'); // Type is phone_number, social and email
-            $table->string('phone_number')->nullable();
-            $table->string('link')->nullable();
-            $table->string('email')->nullable();
+            $table->string('value');
             $table->timestamps();
         });
     }

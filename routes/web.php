@@ -1,6 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Bio;
+use App\Models\Position;
+use App\Models\Education;
+use App\Models\Contact;
+
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +21,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+
+    $bio = Bio::first();
+    $position=Position::all();
+    $education=Education::all();
+    $contact=Contact::all();
+
+    return view('index',[
+        'bio' => $bio,
+        'position'=>$position,
+        'education'=>$education,
+        'contact'=>$contact,
+    ]);
 });
 
 Route::get('about',function() {
-    return view('about');
+    $contact=Contact::all();
+
+    return view('about',[
+        'contact'=>$contact,
+
+    ]);
 });
 
 Route::get('reflections',function(){

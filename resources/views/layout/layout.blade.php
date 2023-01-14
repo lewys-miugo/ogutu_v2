@@ -6,7 +6,7 @@
     <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
         <div class="flex justify-between items-center ">  
             <span class="text-2xl cursor-pointer">
-                <a href="#">
+                <a href="/">
                     <img class="h-10 inline" src="https://imgs.search.brave.com/0AQQolYpCoid6wIJGQ4JKqUsQOaBz8a2CSC0am-Quok/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/bjJOZVZ2LWFTQ09l/Qm84MFdXTVB3SGFI/YSZwaWQ9QXBp">
                         Ogutu 
                 </a> 
@@ -39,7 +39,7 @@
                 <a href="#footer"class="p-3 hover:text-cyan-500  duration-500">Contacts</a>
             </li>
             <li class="mx-4 my-6 md:my-0">
-                <a href="/login"class="p-3 hover:text-cyan-500  duration-500">Dashboard</a>
+                <a href="/admin"class="p-3 hover:text-cyan-500  duration-500">Dashboard</a>
             </li>
         </ul>
 
@@ -55,7 +55,7 @@
   plugins: [require('@tailwindcss/forms')]
 -->
 
-<footer aria-label="Site Footer" class="bg-white">
+<footer aria-label="Site Footer" id="footer" class="bg-white">
   <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
     <div class="lg:grid lg:grid-cols-2">
       <div
@@ -98,15 +98,6 @@
       </div>
 
       <div class="py-8 lg:py-16 lg:pr-16">
-        <!-- <div class="hidden text-teal-600 lg:block">
-          <svg
-            class="h-8"
-            viewBox="0 0 118 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-          </svg>
-        </div> -->
         <div>
             <span class="text-2xl cursor-pointer">
                 <a href="#">
@@ -124,40 +115,13 @@
             <nav aria-label="Footer Navigation - Services" class="mt-6">
                 
               <ul class="space-y-4 text-sm">
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Home
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    About
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Reflections
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Publications
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Current Interest
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Gallery
-                  </a>
-                </li>
+                <li><a href="{{url('/')}}" class="text-gray-700 transition hover:opacity-75">Home</a></li>
+                <li><a href="{{url('about')}}" class="text-gray-700 transition hover:opacity-75">About</a></li>
+                <li><a href="{{url('reflections')}}" class="text-gray-700 transition hover:opacity-75">Reflections</a></li>
+                <li><a href="{{url('publications')}}" class="text-gray-700 transition hover:opacity-75">Publications</a></li>
+                <li><a href="{{url('currentinterests')}}" class="text-gray-700 transition hover:opacity-75">Current Interest</a></li>
+                <li><a href="{{url('gallery')}}" class="text-gray-700 transition hover:opacity-75">Gallery</a></li>
+                <li><a href="/admin" class="text-gray-700 transition hover:opacity-75">Dashboard</a></li>
               </ul>
             </nav>
           </div>
@@ -169,6 +133,7 @@
 
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
+                 
                 <li>
                   <a href="#" class="text-gray-700 transition hover:opacity-75">
                     
@@ -196,91 +161,28 @@
 
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
+                @foreach($contact as $contact)
                 <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    LinkedIn
+                  <a href="{{$contact->link}}" class="text-gray-700 transition hover:opacity-75">
+                    Linkedin
                   </a>
                 </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Twitter
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="text-gray-700 transition hover:opacity-75">
-                    Live Chat
-                  </a>
-                </li>
+                @endforeach
               </ul>
             </nav>
           </div>
         </div>
 
         <div class="pt-8 mt-8 border-t border-gray-100">
-          <!-- <nav aria-label="Footer Navigation - Support">
-            <ul class="flex flex-wrap gap-4 text-xs">
-              <li>
-                <a href="#" class="text-gray-500 transition hover:opacity-75">
-                  Terms & Conditions
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="text-gray-500 transition hover:opacity-75">
-                  Privacy Policy
-                </a>
-              </li>
-
-              <li>
-                <a href="#" class="text-gray-500 transition hover:opacity-75">
-                  Cookies
-                </a>
-              </li>
-            </ul>
-          </nav> -->
 
           <p class="mt-8 text-xs text-gray-500">
-            &copy; 2023. Built by lewys. All rights reserved.
+            &copy; 2023. Built by <a href="#">lewys</a>. All rights reserved.
           </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
-
-
-    <!-- <footer id="footer" class="bg-[#6495ed] text-white py-4">
-        <div class="mx-auto flex flex-col xl:flex-row xl:justify-between xl:w-2/3">
-            <ul class="flex flex-row justify-center items-center mb-1 xl:mb-0">
-                <a href="/home"><li class="px-2 footer_text--hover">Home</li></a>
-                <a href="about"><li class="px-2 footer_text--hover">About</li></a>
-                <a href="blog"><li class="px-2 footer_text--hover">Reflections</li></a>
-                <a href="#blog"><li class="px-2 footer_text--hover">Publications</li></a>
-                <a href="{{url('currentinterests')}}"><li class="px-2 footer_text--hover">Current Interests</li></a>
-                <a href="#gallery"><li class="px-2 footer_text--hover">Gallery</li></a>
-
-            </ul>
-
-            <div class="mt-1 xl:mt-0">
-                <ul class="flex flex-row justify-center items-center">
-                    <li class="p-2 footer_text--hover"><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li class="p-2 footer_text--hover"><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li class="p-2 footer_text--hover"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li class="p-2 footer_text--hover"><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-                    <li class="p-2 footer_text--hover"><a href=""><ion-icon name="mail"></ion-icon> Ogutu@gmail.com</a></li>
-
-                </ul>
-            </div>
-        </div>
-        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4  sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 flex justify-center">
-            © 2022  made by:
-            <a href="#" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">
-                lewis
-            </a>
-        </p>
-    </footer> -->
 
 
     <script>

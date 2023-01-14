@@ -31,13 +31,7 @@ class ContactResource extends Resource
                             'social' => 'Social Media',
                             'email' => 'Email Address'
                         ])->reactive(),
-                    TextInput::make('phone_number')
-                        ->hidden(fn(\Closure $get) => $get('type') !== 'phone_number'),
-                    TextInput::make('link')
-                        ->label('Social Media Link')
-                        ->hidden(fn(\Closure $get) => $get('type') !== 'social'),
-                    TextInput::make('email')
-                        ->hidden(fn(\Closure $get) => $get('type') !== 'email')
+                    TextInput::make('value')
                 ])
             ]);
     }
@@ -48,13 +42,7 @@ class ContactResource extends Resource
             ->columns([
                 //
                 Tables\Columns\TextColumn::make('type'),
-                Tables\Columns\TextColumn::make('phone_number')->label('Phone Number'),
-                Tables\Columns\TextColumn::make('email')->label('Email Address'),
-                Tables\Columns\TextColumn::make('link')->label('Social Media Link')
-
-
-//                Tables\Columns\TextColumn::make('email')->hidden(fn(\Closure $get) => $get('email') !== null)->label('Value'),
-//                Tables\Columns\TextColumn::make('social')->hidden(fn(\Closure $get) => $get('social') !== null)->label('Value'),
+                Tables\Columns\TextColumn::make('value')
             ])
             ->filters([
                 //

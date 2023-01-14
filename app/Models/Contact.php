@@ -11,8 +11,6 @@ class Contact extends Model
 
     protected $fillable = [
         'type',
-        'phone_number',
-        'email',
-        'link',
+        'value'
     ];
 }

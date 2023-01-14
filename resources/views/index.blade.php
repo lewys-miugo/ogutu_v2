@@ -41,12 +41,13 @@
                 <div class="flex flex-col justify-center items-center">
                     <!-- h-fit w-fit object-fit  -->
                     <img class="rounded-full"
-                         src="{{ url('/images/p.jpg')}}"
+                         src="{{ $bio->picture}}"
                          alt="">
-                    <p class="m-1 font-black">International Business & Trade Specialist,</p>
-                    <p class="m-1 font-black text-gray-500">Econalis Group LLC.</p>
-                    <p class="m-1 font-black">Assistant Prof. International Business & Trade,</p>
-                    <p class="m-1 font-black text-gray-500">African Leadership University.</p>
+                    @foreach($position as $position)
+                    <p class="m-1 font-black">{{$position->title}},</p>
+                    <p class="m-1 font-black text-gray-500">{{$position->institution}}.</p>
+                    @endforeach
+                    
 
                     <div class="flex flex-col text-center gap-6 py-3">
                         <!-- <div class="px-6">
@@ -56,15 +57,13 @@
                         <div class="px-6">
                             <h2 class="font-bold text-indigo-600 text-xl">Education</h2>
                             <ol class="l-auto">
-                                    <ul class="py-0 m-0">
-                                        <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> MA Political Science,2016</li>
-                                        <li class="px-5 ">University of Nairobi</li>
+
+                                @foreach($education as $education)
+                                        <ul class="py-0 m-0">
+                                        <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion}}</li>
+                                        <li class="px-5 ">{{$education->institution}}</li>
                                     </ul>
-                                    <ul class="py-3">
-                                        <li class="font-bold flex flex-row gap-2"><span><ion-icon name="school"></ion-icon></span>MA Political Science,2016</li>
-                                        <li class="px-5 ">University of Nairobi</li>
-                                    </ul>
-                                
+                                @endforeach                                
                             </ol>
                         </div>
                     </div>
@@ -74,23 +73,9 @@
             <!-- Right -->
             <div  class=" lg:w-2/3 my-auto flex flex-col gap-3">
                 <h1 class="text-indigo-600 text-center font-bold text-2xl">About Me</h1>
-
                 <p class="text-gray-600">
-                 I am an International Development Professional, Public Policy Specialist, Social Innovator and Entrepreneur. I am a Scholar and Practitioner whose research and work centres around:  the Global Political Economy; Global Sustainability; Trade and Sustainable Development; Social Innovation and Entrepreneurship; Education; and Leadership Development in Africa. 
+                    <!-- {{$bio->about}} --> 
                 </p>
-
-                <p class="text-gray-600">I have researched, designed strategies, and managed programs in multiple sectors including: trade and investment policies, education, healthcare, circular economy, blue economy, social entrepreneurship, inclusive innovation, digital technology, regional integration in Africa, governance in Africa, and private sector development.</p>
-
-                <p class="text-gray-600">Over the last ten years, I have worked as an International Business & Trade Specialist supporting public and private sector stakeholders to design and implement trade-related research and economic development projects in Africa, Asia, Caribbean, and the Pacific (ACP).  I have worked as an expert consultant on projects commissioned by the EU, Commonwealth Secretariat, UNDP, African Union, the UK’s Foreign, Commonwealth & Development Office (FCDO), German International Development Agency (GIZ), the East African Community (EAC), Alliance for a Green Revolution in Africa (AGRA), and Trademark East Africa (TMEA), and various governments and think tanks in Africa and Europe.</p>
-
-                <p class="text-gray-600">
-                    My work and leadership have been recognised through various prestigious international awards and scholarships including being selected as a Christine Mirzayan Science and Technology Policy Graduate Fellowship Program (2023 Finalist) by the National Academies of Sciences, Engineering, and Medicine; a Dalai Lama Fellow (2019) by the Contemplative Sciences Centre at the University of Virginia; Mandela Rhodes Scholar (2017) by the Mandela Rhodes Foundation; a Bertha Scholar (2020), by the Bertha Centre for Social Innovation and Entrepreneurship; and a Mauritius Africa Scholar (2013). 
-
-                </p>
-
-                <p class="text-gray-600">Originally from Kenya, I have strong international experience gained from studying, living, and working in the USA,  Brazil, South Africa, Kenya, Rwanda, Mauritius, and travelling to over 20 countries across Africa, Latin America, and the Caribbean. In addition to gaining wide perspectives, these improved my intercultural awareness, empathy and provided an opportunity to understand the world and expand my networks.</p>
-
-                <p class="text-gray-600">I graduated with a Master of Philosophy (MPhil) in Inclusive Innovation (2022) and an MA in International Relations (2018), both from the University of Cape Town, and a Bachelor of Science (honours) Political Science from the University of Mauritius. I was also a Graduate Fellow at the University of Massachusetts, Amherst where I studied Political Economy, Negotiations, and Global Health. </p>
             </div>
         </div>
 
