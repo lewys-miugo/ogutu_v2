@@ -55,6 +55,15 @@
                         <li>US / EU  – Africa Relations.</li>
                         <li>Hiking </li>
 
+                         <h2 class="font-medium text-gray-900">
+                            Lorem ipsum dolor sit amet consectetur adipisicing?
+                         </h2>
+                         <p class="px-4 mt-4 leading-relaxed text-gray-700">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
+                            molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
+                            voluptate dicta quo officiis explicabo consequuntur distinctio corporis
+                            earum similique!
+                        </p>
                     </ol>
                     
 
