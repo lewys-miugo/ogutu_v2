@@ -30,9 +30,9 @@
         <!-- Animated text -->
         <div
             class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-38 xl:text-7xl font-bold">
-            <span class="text-white">About</span>
+            <span class="text-white">Current</span>
             <!-- <p class="text-white">Moses</p> -->
-            <p class="text-red-500">Me</p>
+            <p class="text-red-500">Interests</p>
         </div>
     </div>
 
