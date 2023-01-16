@@ -48,14 +48,13 @@
             <div class="p-5 sm:p-0 flex flex-wrap justify-between">
 
                 @foreach($gallery as $gallery)
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-2">
-                    <img class="w-fit sm:items-center"
-                            src="{{asset('storage/'.$gallery->image)}}"
-                            alt="Moses Ogutu images gallery photos">
-                    <!-- <h1 class="font-medium text-lg">Biden' Rally</h1> -->
-                    <p class="text-gray-600">{{$gallery->caption}}</p>
-                </div>
-
+                    <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-2">
+                        <img class="w-fit sm:items-center"
+                                src="{{asset('storage/'.$gallery->image)}}"
+                                alt="Moses Ogutu images gallery photos">
+                        <!-- <h1 class="font-medium text-lg">Biden' Rally</h1> -->
+                        <p class="text-gray-600">{{$gallery->caption}}</p>
+                    </div>
                 @endforeach
             </div>
         </div> 
