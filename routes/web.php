@@ -5,6 +5,8 @@ use App\Models\Bio;
 use App\Models\Position;
 use App\Models\Education;
 use App\Models\Contact;
+use App\Models\Interest;
+use App\Models\Gallery;
 
 
 
@@ -26,12 +28,14 @@ Route::get('/', function () {
     $position=Position::all();
     $education=Education::all();
     $contact=Contact::all();
+    $gallery=Gallery::all();
 
     return view('index',[
         'bio' => $bio,
         'position'=>$position,
         'education'=>$education,
         'contact'=>$contact,
+        'gallery'=>$gallery,
     ]);
 });
 
@@ -40,18 +44,28 @@ Route::get('about',function() {
     $position=Position::all();
     $education=Education::all();
     $contact=Contact::all();
+    $gallery=Gallery::all();
+    $interest=Interest::all();
 
     return view('about',[
         'bio' => $bio,
         'position'=>$position,
         'education'=>$education,
         'contact'=>$contact,
+        'gallery'=>$gallery,
+        'interest'=>$interest,
 
     ]);
 });
 
 Route::get('reflections',function(){
-    return view('reflections');
+    $contact=Contact::all();
+
+
+    return view('reflections',[
+        'contact'=>$contact,
+
+    ]);
 });
 
 Route::get('publications', function(){
@@ -63,5 +77,12 @@ Route::get('currentinterests', function(){
 });
 
 Route::get('gallery', function(){
-    return view('gallery');
+    $gallery=Gallery::all();
+    $contact=Contact::all();
+
+    
+    return view('gallery',[
+        'contact'=>$contact,
+        'gallery'=>$gallery,
+    ]);
 });

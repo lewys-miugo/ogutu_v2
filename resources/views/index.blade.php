@@ -41,8 +41,10 @@
                 <div class="flex flex-col justify-center items-center">
                     <!-- h-fit w-fit object-fit  -->
                         <img class="rounded-full"
-                            src="{{ $bio->picture}}"
+                            src="{{asset('storage/'. $bio->picture)}}"
                             alt="">
+                        <p class="m-1 font-black ">{{$bio->name}}</p>
+
                         @foreach($position as $position)
                         <p class="m-1 font-black">{{$position->title}},</p>
                         <p class="m-1 font-black text-gray-500">{{$position->institution}}.</p>
@@ -74,7 +76,7 @@
             <div  class=" lg:w-2/3 my-auto flex flex-col gap-3">
                 <h1 class="text-indigo-600 text-center font-bold text-2xl">About Me</h1>
                 <p class="text-gray-600">
-                    <!-- {{$bio->about}} --> 
+                    {{$bio->about}} 
                 </p>
             </div>
         </div>

@@ -30,9 +30,9 @@
         <!-- Animated text -->
         <div
             class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-38 xl:text-7xl font-bold">
-            <span class="text-white">About</span>
+            <span class="text-white">Photos</span>
             <!-- <p class="text-white">Moses</p> -->
-            <p class="text-red-500">Me</p>
+            <p class="text-red-500">& Moments</p>
         </div>
     </div>
 
@@ -41,35 +41,22 @@
             <div class="flex flex-col gap-3 items-center">
                 <h1 class="text-indigo-600 font-bold text-2xl">Gallery</h1>
                 <p class="w-1/2 text-center text-gray-600">
-                    Media on my interactions, places I've been to and showcasing my work.
+                    Media on my interactions, places I've been to and things I've been doing.
                 </p>
             </div>
                         
             <div class="p-5 sm:p-0 flex flex-wrap justify-between">
-                
+
+                @foreach($gallery as $gallery)
                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-2">
                     <img class="w-fit sm:items-center"
-                            src="https://imgs.search.brave.com/LUVfQoQ64vsjW0PdbA-GI5RHyrxIlOTr0iF9GslALmM/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5Y/S1FLaHcwWlJpc242/bkVDQURiZEpnSGFF/OCZwaWQ9QXBp"
-                            alt="">
-                    <h1 class="font-medium text-lg">Biden' Rally</h1>
-                    <p class="text-gray-600">In a workshop with the guest being bidden</p>
+                            src="{{asset('storage/'.$gallery->image)}}"
+                            alt="Moses Ogutu images gallery photos">
+                    <!-- <h1 class="font-medium text-lg">Biden' Rally</h1> -->
+                    <p class="text-gray-600">{{$gallery->caption}}</p>
                 </div>
 
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-2">
-                    <img class="w-fit sm:items-center"
-                            src="https://media.istockphoto.com/id/1353371843/photo/portrait-of-smiling-mature-male-tutor-in-busy-university-or-college-building-with-students.jpg?b=1&s=170667a&w=0&k=20&c=lki1qxxh5c4PhKCf_JDXSyfw-y_F4PEEox_9QBlznTk="
-                            alt="">
-                    <h1 class="font-medium text-lg">School hallway</h1>
-                    <p class="text-gray-600">Heading to a sessio with my students.</p>
-                </div>
-
-                <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-2">
-                    <img class="w-fit sm:items-center"
-                            src="https://cdn.pixabay.com/photo/2016/08/16/09/53/international-conference-1597531__340.jpg"
-                            alt="">
-                    <h1 class="font-medium text-lg">Conference</h1>
-                    <p class="text-gray-600">In a conference of WEF </p>
-                </div>
+                @endforeach
             </div>
         </div> 
 
