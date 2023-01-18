@@ -7,6 +7,8 @@ use App\Models\Education;
 use App\Models\Contact;
 use App\Models\Interest;
 use App\Models\Gallery;
+use App\Models\InternalReflection;
+
 
 
 
@@ -60,10 +62,12 @@ Route::get('about',function() {
 
 Route::get('reflections',function(){
     $contact=Contact::all();
+    $internalreflection=Internalreflection::all();
 
 
     return view('reflections',[
         'contact'=>$contact,
+        'internalreflection'=>$internalreflection,
 
     ]);
 });
@@ -73,7 +77,16 @@ Route::get('publications', function(){
 });
 
 Route::get('currentinterests', function(){
-    return view('currentinterests');
+    $gallery=Gallery::all();
+    $contact=Contact::all();
+    $interest=Interest::all();
+
+    return view('currentinterests',[
+        'interest'=>$interest,
+        'gallery'=>$gallery,
+        'contact'=>$contact,
+
+    ]);
 });
 
 Route::get('gallery', function(){
@@ -84,5 +97,15 @@ Route::get('gallery', function(){
     return view('gallery',[
         'contact'=>$contact,
         'gallery'=>$gallery,
+    ]);
+});
+
+Route::get('postview',function(){
+
+    $contact=Contact::all();
+
+    return view('postview',[
+        'contact'=>$contact,
+
     ]);
 });

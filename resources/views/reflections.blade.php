@@ -57,6 +57,20 @@
                     </div>
                 </div>
 
+                @foreach($internalreflection as $internalreflection)
+                    <div class="flex flex-col items-start col-span-12 overflow-hidden shadow-sm rounded-xl md:col-span-6 lg:col-span-4">
+                        <a href="#_" class="block transition duration-200 ease-out transform hover:scale-110">
+                            <img class="lg:h-64 lg:max-w-lg" src="{{asset('storage/'.$internalreflection->image)}}" alt="">
+                        <div class="relative flex flex-col items-start px-6 bg-white border border-t-0 border-gray-200 py-7 rounded-b-2xl">
+                            <!-- <div class="bg-indigo-400 absolute top-0 -mt-3 flex items-center px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block">
+                                <span>Math</span>
+                            </div> -->
+                            <h2 class="text-base text-gray-500 font-bold sm:text-lg md:text-xl"><a href="#_">{{$internalreflection->title}}</a></h2>
+                        </div>
+                    </div>
+
+                @endforeach
+
                 <div class="flex flex-col items-start col-span-12 overflow-hidden shadow-sm rounded-xl md:col-span-6 lg:col-span-4">
                     <a href="#_" class="block transition duration-200 ease-out transform hover:scale-110">
                         <img class="object-cover w-full shadow-sm h-full" src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1951&amp;q=80">
