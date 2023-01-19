@@ -24,6 +24,7 @@ class InternalReflectionResource extends Resource
                 //
                 Forms\Components\Card::make()->schema([
                     Forms\Components\TextInput::make('title')->required(),
+                    Forms\Components\TextInput::make('tag')->required(),
                     Forms\Components\FileUpload::make('image')->image()->required(),
                     Forms\Components\RichEditor::make('content')->required()
                 ])
@@ -36,6 +37,7 @@ class InternalReflectionResource extends Resource
             ->columns([
                 //
                 Tables\Columns\TextColumn::make('title'),
+                Tables\Columns\TextColumn::make('tag'),
                 Tables\Columns\ImageColumn::make('image'),
             ])
             ->filters([

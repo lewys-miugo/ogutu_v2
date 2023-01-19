@@ -11,6 +11,7 @@ class InternalReflection extends Model
 
     protected $fillable = [
         'title',
+        'tag',
         'image',
         'content'
     ];

@@ -38,7 +38,10 @@
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$internalreflection->image}") }} alt="">
-                    <p class="p-2 font-bold">{{ $internalreflection->title }}</p>
+                    <div class="flex justify-between items-center mr-2">
+                        <p class="p-2 font-bold">{{ $internalreflection->title }}</p>
+                        <p class="rounded-3xl text-white bg-red-600 px-2">{{ $internalreflection->tag }}</p>
+                    </div>
                 </a>
             @endforeach
 
