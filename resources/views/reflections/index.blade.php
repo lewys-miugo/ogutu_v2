@@ -33,7 +33,7 @@
         {{--        Reflections container--}}
         <div class="flex flex-col mt-3 md:flex-row md:flex-wrap justify-center items-center">
             @foreach($internalreflections as $internalreflection)
-                <a href="{{"/reflections/{$internalreflection->id}"}}"
+                <a href="{{route('reflections.show', $internalreflection->id)}}"
                    class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
