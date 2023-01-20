@@ -1,41 +1,50 @@
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-@vite('resources/css/app.css')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    @vite('resources/css/app.css')
+    <title>Moses Ogutu</title>
+</head>
 <body class="bg-gray-200">
 <!-- flex justify-between mb-6 -->
 <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
-    <div class="flex justify-between items-center ">
-            <span class="text-2xl cursor-pointer">
-                <a href="/">
-                    <img class="h-10 inline"
-                         src="https://imgs.search.brave.com/0AQQolYpCoid6wIJGQ4JKqUsQOaBz8a2CSC0am-Quok/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/bjJOZVZ2LWFTQ09l/Qm84MFdXTVB3SGFI/YSZwaWQ9QXBp">
-                        Ogutu
-                </a>
-            </span>
-        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
-    </div>
+  <div class="flex justify-between items-center ">
+    <span class="text-2xl cursor-pointer">
+      <a href="/">
+        <img class="h-10 inline"
+          src="https://imgs.search.brave.com/0AQQolYpCoid6wIJGQ4JKqUsQOaBz8a2CSC0am-Quok/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5l/bjJOZVZ2LWFTQ09l/Qm84MFdXTVB3SGFI/YSZwaWQ9QXBp">
+          Ogutu
+      </a>
+    </span>
+
+    <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+      <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+    </span>
+  </div>
 
     <ul class="md:flex md:items-center z-[-1] z-30 md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-        <li class="mx-4 my-6 md:my-0">
-            <a href="/" class="p-3 hover:text-cyan-500  duration-500">Home</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="{{url('about')}}" class="p-3 hover:text-cyan-500  duration-500">About</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="{{url('reflections')}}" class="p-3 hover:text-cyan-500  duration-500">Reflections</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="{{url('publications')}}" class="p-3 hover:text-cyan-500  duration-500">Publications</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="{{url('currentinterests')}}" class="p-3 hover:text-cyan-500  duration-500">Current Interests</a>
-        </li>
-        <li class="mx-4 my-6 md:my-0">
-            <a href="{{url('gallery')}}" class="p-3 hover:text-cyan-500  duration-500">Gallery</a>
-        </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="/" class="p-3 hover:text-cyan-500  duration-500">Home</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="{{url('about')}}" class="p-3 hover:text-cyan-500  duration-500">About</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="{{url('/reflections')}}" class="p-3 hover:text-cyan-500  duration-500">Reflections</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="{{url('/publications')}}" class="p-3 hover:text-cyan-500  duration-500">Publications</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="{{url('/currentinterests')}}" class="p-3 hover:text-cyan-500  duration-500">Current Interests</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="{{url('/gallery')}}" class="p-3 hover:text-cyan-500  duration-500">Gallery</a>
+      </li>
     </ul>
 
 </nav>
@@ -75,12 +84,12 @@
                         <div
                             class="p-2 border border-gray-100 rounded-md focus-within:ring sm:flex sm:items-center sm:gap-4"
                         >
-                            <!-- <input
+                            <input
                               type="email"
                               id="UserEmail"
                               placeholder="john@rhcp.com"
                               class="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm"
-                            /> -->
+                            />
 
                             <button
                                 class="w-full px-6 py-3 mt-1 text-sm font-bold tracking-wide text-white uppercase transition-none bg-indigo-600 rounded hover:bg-teal-600 sm:mt-0 sm:w-auto sm:flex-shrink-0"
@@ -129,7 +138,7 @@
                         </nav>
                     </div>
 
-                    <div>
+                    {{--<!-- <div>
                         <p class="font-medium text-gray-900">Publications & Reflections</p>
                         <div><span class="hidden w-13 h-1 bg-indigo-600 rounded lg:block"></span></div>
 
@@ -139,36 +148,37 @@
 
                                 <li>
                                     <a href="#" class="text-gray-700 transition hover:opacity-75">
-
+                                          <p>lorem 3</p>
                                     </a>
                                 </li>
 
-                                <li>
-                                    <a href="#" class="text-gray-700 transition hover:opacity-75">
-
-                                    </a>
-                                </li>
+                                
 
                                 <li>
+                                  @foreach($externalpublications->slice(0,3) as $externalpublication)
+                                  
                                     <a href="#" class="text-gray-700 transition hover:opacity-75">
-
+                                        <p>{{$externalpublication->title}}</p>
                                     </a>
+                                  @endforeach  
                                 </li>
                             </ul>
                         </nav>
-                    </div>
+                    </div> --> --}}
 
                     <div>
-                        <p class="font-medium text-gray-900">Contact</p>
+                        <p class="font-medium text-gray-900">Contacts</p>
                         <div><span class="hidden w-12 h-1 bg-indigo-600 rounded lg:block"></span></div>
 
                         <nav aria-label="Footer Navigation - Company" class="mt-6">
                             <ul class="space-y-4 text-sm">
                                 @foreach($contact as $contact)
                                     <li>
+                                      @if($contact->type=="social")
                                         <a href="{{$contact->link}}" class="text-gray-700 transition hover:opacity-75">
-                                            Linkedin
+                                            
                                         </a>
+                                      @endif
                                     </li>
                                 @endforeach
                             </ul>

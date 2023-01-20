@@ -1,29 +1,13 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <title>Ogutu</title>
-</head>
+
 @extends('layout.layout')
 @section('content')
 <!-- <img src="{{url('/images/i6.jpeg')}}" alt="Image"/> -->
 
     <div class=" h-1/2 lg:h-screen bg-white relative md:z-10">
-        <!-- bg-gradient-to-t from-indigo-200  -->
-
-
-        <!-- Intro content -->
-
-        <!-- Image -->
+        <!-- bg-gradient-to-t from-indigo-200 -->
         <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-full w-full object-cover"
-                
              src="{{url('/images/i8.jpeg')}}"
              alt="">
-             <!-- $bio->iimage  -->
 
         <!-- Animated text -->  
         <div

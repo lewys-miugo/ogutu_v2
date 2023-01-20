@@ -11,6 +11,7 @@ class ExternalReflection extends Model
 
     protected $fillable = [
         'title',
+        'tag',
         'image',
         'link'
     ];

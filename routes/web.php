@@ -1,12 +1,17 @@
 <?php
 
 use App\Http\Controllers\ReflectionController;
+use App\Http\Controllers\PublicationController;
 use App\Models\Bio;
 use App\Models\Contact;
 use App\Models\Education;
 use App\Models\Gallery;
 use App\Models\Interest;
 use App\Models\Position;
+use App\Models\InternalReflection;
+use App\Models\ExternalReflection;
+use App\Models\InternalPublication;
+use App\Models\ExternalPublication;
 use Illuminate\Support\Facades\Route;
 
 
@@ -57,13 +62,16 @@ Route::get('about', function () {
 });
 
 
-Route::get('/reflections', [ReflectionController::class, 'index'])->name('reflections.index');
+Route::get('/reflections', [ReflectionController::class, 'index'])->name('/reflections.index');
 Route::get('/reflections/{reflection}', [ReflectionController::class, 'show'])->name('reflections.show');
 
+Route::get('/publications', [PublicationController::class, 'index'])->name('publications.index');
+Route::get('/publications/{reflection}', [PublicationController::class, 'show'])->name('publications.show');
 
-Route::get('publications', function () {
-    return view('publications');
-});
+
+// Route::get('publications', function () {
+//     return view('publications');
+// });
 
 Route::get('currentinterests', function () {
     $gallery = Gallery::all();

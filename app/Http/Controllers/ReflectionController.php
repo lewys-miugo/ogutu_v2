@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use App\Models\InternalReflection;
+use App\Models\ExternalReflection;
 
 class ReflectionController extends Controller
 {
@@ -13,6 +14,7 @@ class ReflectionController extends Controller
         return view('reflections.index', [
             'contact' => Contact::all(),
             'internalreflections' => InternalReflection::all()->sortByDesc('created_at'),
+            'externalreflections' => ExternalReflection::all()->sortByDesc('created_at')
         ]);
     }
 

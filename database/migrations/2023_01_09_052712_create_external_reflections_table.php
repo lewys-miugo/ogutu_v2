@@ -15,6 +15,8 @@ return new class extends Migration {
         Schema::create('external_reflections', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('tag');
+
             $table->string('image');
             $table->string('link');
             $table->timestamps();

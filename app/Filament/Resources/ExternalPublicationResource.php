@@ -29,6 +29,7 @@ class ExternalPublicationResource extends Resource
                             "global_sustainability" => "Global Sustainability"
                         ]),
                     Forms\Components\TextInput::make('title'),
+                    Forms\Components\TextInput::make('tag'),
                     Forms\Components\FileUpload::make('image'),
                     Forms\Components\TextInput::make('link')
                 ])
@@ -41,6 +42,7 @@ class ExternalPublicationResource extends Resource
             ->columns([
                 //
                 Tables\Columns\TextColumn::make('type'),
+                Tables\Columns\TextColumn::make('tag'),
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\ImageColumn::make('image')
             ])

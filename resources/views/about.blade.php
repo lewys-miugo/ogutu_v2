@@ -1,48 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    @vite('resources/css/app.css')
-    <title>Ogutu</title>
-</head>
+
 
 @extends('layout.layout')
 
 @section('content')
 <!-- component -->
     <div class=" h-1/2 lg:h-screen bg-white relative md:z-10">
-        <!-- bg-gradient-to-t from-indigo-200  -->
-
-
-        <!-- Intro content -->
-
-        <!-- Image -->
         <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-full w-full object-cover"
-                
              src="{{url('/images/i8.jpeg')}}"
              alt="">
-             <!-- $bio->iimage  -->
 
-        <!-- Animated text -->
+        <!-- Animated text -->  
         <div
             class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-38 xl:text-7xl font-bold">
-            <span class="text-white">About</span>
-            <!-- <p class="text-white">Moses</p> -->
-            <p class="text-red-500">Me</p>
+            <span class="text-white">More</span>
+            <p class="text-red-600">About</p>
+            <p class="text-white">Me</p>
         </div>
     </div>
 <!-- New trial section-->
 
     <!-- New trial layout -->
     <div class="bg-white pt-6">
-        <div class="">
+        <!-- <div class="">
             <h1 class="text-indigo-600 text-center pb-6 font-bold text-2xl">About Me</h1>
-
-        </div>
+        </div> -->
 <!-- max-w-7xl mx-auto grid grid-cols-12  -->
         <div class="">
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12">
@@ -134,3 +115,6 @@
         </div>
     </div>
 @endsection
+<body>
+</body>
+</html>

@@ -12,6 +12,7 @@ class ExternalPublication extends Model
     protected $fillable = [
         'type',
         'title',
+        'tag',
         'image',
         'link'
     ];

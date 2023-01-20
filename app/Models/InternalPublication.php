@@ -12,6 +12,7 @@ class InternalPublication extends Model
     protected $fillable = [
         'type',
         'title',
+        'tag',
         'image',
         'content'
     ];
