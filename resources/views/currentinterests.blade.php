@@ -22,15 +22,12 @@
         <div id="experience" class="container mx-auto py-10 flex flex-col lg:flex-row item-center gap-20 bg-white">
             
             <div class="lg:w-2/3 my-auto flex flex-col gap-3 ">
-                <!-- <h1 class="text-indigo-600 text-center font-bold text-2xl">Interests</h1> -->
-                <!-- <h1 class="text-3xl font-medium">Associate Professor</h1>
-                <h1 class="text-3xl font-medium">Convent university</h1>  -->
                 <ol class="py-4 ml-20 list-disc flex flex-col  ">
             
                     @foreach($interest as $interest)
                         <li>
-                            <h2 class="font-medium text-gray-900">{{$interest->title}}</h2>
-                            <p class="px-4 mt-4 leading-relaxed text-gray-700">{{$interest->content}}</p>
+                            <h2 class="font-medium pt-4 text-2xl text-black">{{$interest->title}}</h2>
+                            <p class="px-4  text-indigo-500">{!! $interest->content !!}</p>
                         </li>  
                     @endforeach                    
                 </ol>                 
