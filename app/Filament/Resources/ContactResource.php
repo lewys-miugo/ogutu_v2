@@ -31,7 +31,9 @@ class ContactResource extends Resource
                             'social' => 'Social Media',
                             'email' => 'Email Address'
                         ])->reactive(),
-                    TextInput::make('value')
+                    TextInput::make('value'),
+                    TextInput::make('name')
+
                 ])
             ]);
     }
@@ -42,7 +44,9 @@ class ContactResource extends Resource
             ->columns([
                 //
                 Tables\Columns\TextColumn::make('type'),
-                Tables\Columns\TextColumn::make('value')
+                Tables\Columns\TextColumn::make('value'),
+                Tables\Columns\TextColumn::make('name'),
+
             ])
             ->filters([
                 //
