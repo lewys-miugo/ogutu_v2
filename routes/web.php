@@ -73,12 +73,12 @@ Route::get('/publications/{reflection}', [PublicationController::class, 'show'])
 //     return view('publications');
 // });
 
-Route::get('currentinterests', function () {
+Route::get('/currentinterests', function () {
     $gallery = Gallery::all();
     $contact = Contact::all();
     $interest = Interest::all();
 
-    return view('currentinterests', [
+    return view('/currentinterests', [
         'interest' => $interest,
         'gallery' => $gallery,
         'contact' => $contact,
