@@ -13,9 +13,9 @@
             <!-- Animated text -->  
             <div
                 class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-38 xl:text-7xl font-bold">
-                <span class="text-white">More</span>
-                <p class="text-red-600">About</p>
-                <p class="text-white">Me</p>
+                <span class="text-white">My</span>
+                <p class="text-red-600">Publications</p>
+                <!-- <p class="text-white">Me</p> -->
             </div>
         </div>
 
@@ -26,13 +26,16 @@
             
             @foreach($internalpublications as $internalpublication)
                 @if($internalpublication->type=="global_sustainability")
-                <a href="{{route('publications.show', $internalpublication->id)}}"
+                <a target="_blank" href="{{route('publications.show', $internalpublication->id)}}"
                    class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$internalpublication->image}") }} alt="">
                     <div class="flex justify-between items-center mr-2">
-                        <p class="p-2 font-bold">{{ $internalpublication->title }}</p>
+                        <div class="flex flex-col">
+                            <time class="text-xs pl-2 text-gray-500">{{$internalpublication->time}}</time>
+                            <p class="p-2 font-bold">{{ $internalpublication->title }}</p>
+                        </div>
                         <p class="rounded-3xl text-white bg-green-600 px-2 ">{{ $internalpublication->tag }}</p>
                     </div>
                 </a>
@@ -43,13 +46,16 @@
         <div class="flex flex-col mt-3 md:flex-row md:flex-wrap justify-center items-center">
             @foreach($externalpublications as $externalpublication)
                 @if($externalpublication->type=="global_sustainability")
-                <a href="{{$externalpublication->link}}"
+                <a target="_blank" href="{{$externalpublication->link}}"
                    class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$externalpublication->image}") }} alt="">
                     <div class="flex justify-between items-center mr-2">
-                        <p class="p-2 font-bold">{{ $externalpublication->title }}</p>
+                        <div class="flex flex-col">
+                            <time class="text-xs pl-2 text-gray-500">{{$externalpublication->time}}</time>
+                            <p class="p-2 font-bold">{{ $externalpublication->title }}</p>
+                        </div>
                         <p class="rounded-3xl text-white bg-green-600 px-2">{{ $externalpublication->tag }}</p>
                     </div>
                 </a>
@@ -65,13 +71,17 @@
             
             @foreach($internalpublications as $internalpublication)
                 @if($internalpublication->type=="global_trade")
-                <a href="{{route('publications.show', $internalpublication->id)}}"
+                <a target="_blank" href="{{route('publications.show', $internalpublication->id)}}"
                    class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$internalpublication->image}") }} alt="">
                     <div class="flex justify-between items-center mr-2">
-                        <p class="p-2 font-bold">{{ $internalpublication->title }}</p>
+                        <div class="flex flex-col">
+                            <time class="text-xs pl-2 text-gray-500">{{$internalpublication->time}}</time>
+                            <p class="p-2 font-bold">{{ $internalpublication->title }}</p>
+                        </div>
+                        
                         <p class="rounded-3xl text-white bg-red-600 px-2 ">{{ $internalpublication->tag }}</p>
                     </div>
                 </a>
@@ -82,13 +92,16 @@
         <div class="flex flex-col mt-3 md:flex-row md:flex-wrap justify-center items-center">
             @foreach($externalpublications as $externalpublication)
                 @if($externalpublication->type=="global_trade")
-                <a href="{{$externalpublication->link}}"
+                <a target="_blank" href="{{$externalpublication->link}}"
                    class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$externalpublication->image}") }} alt="">
                     <div class="flex justify-between items-center mr-2">
-                        <p class="p-2 font-bold">{{ $externalpublication->title }}</p>
+                        <div class="flex flex-col">
+                            <time class="text-xs pl-2 text-gray-500">{{$externalpublication->time}}</time>
+                            <p class="p-2 font-bold">{{ $externalpublication->title }}</p>
+                        </div>
                         <p class="rounded-3xl text-white bg-red-600 px-2">{{ $externalpublication->tag }}</p>
                     </div>
                 </a>

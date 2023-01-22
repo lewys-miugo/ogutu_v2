@@ -18,7 +18,8 @@
         </div>
         <div class="content-area p-3 md:max-w-2xl md:mx-auto lg:max-w-6xl">
             <h1 class="font-bold font text-2xl mb-2">{{$internal_reflection->title}}</h1>
-            <div>
+            <time class="block text-xs text-gray-500">{{$internal_reflection->time}}</time>
+            <div class="mt-4">
                 {!!  $internal_reflection->content !!}
             </div>
         </div>

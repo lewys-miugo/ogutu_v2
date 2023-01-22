@@ -25,9 +25,9 @@
             <!-- Animated text -->  
             <div
                 class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-38 xl:text-7xl font-bold">
-                <span class="text-white">More</span>
-                <p class="text-red-600">About</p>
-                <p class="text-white">Me</p>
+                <span class="text-white">My</span>
+                <p class="text-red-600">Reflections</p>
+                <!-- <p class="text-white">Me</p> -->
             </div>
         </div>
 
@@ -35,13 +35,16 @@
         {{--        Reflections container--}}
         <div class="flex flex-col mt-3 md:flex-row md:flex-wrap justify-center items-center">
             @foreach($internalreflections as $internalreflection)
-                <a href="{{route('reflections.show', $internalreflection->id)}}"
+                <a target="_blank" href="{{route('reflections.show', $internalreflection->id)}}"
                    class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$internalreflection->image}") }} alt="">
                     <div class="flex justify-between items-center mr-2">
-                        <p class="p-2 font-bold">{{ $internalreflection->title }}</p>
+                       <div class="flex flex-col">
+                            <time class="text-xs pl-2 text-gray-500">{{$internalreflection->time}} </time>
+                            <p class="p-2 font-bold">{{ $internalreflection->title }}</p>
+                        </div>
                         <p class="rounded-3xl text-white bg-red-600 px-2">{{ $internalreflection->tag }}</p>
                     </div>
                 </a>
@@ -50,13 +53,16 @@
 
         <div class="flex flex-col mt-3 md:flex-row md:flex-wrap justify-center items-center">
             @foreach($externalreflections as $externalreflection)
-                <a href="{{$externalreflection->link}}"
+                <a target="_blank" href="{{$externalreflection->link}}"
                    class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$externalreflection->image}") }} alt="">
                     <div class="flex justify-between items-center mr-2">
-                        <p class="p-2 font-bold">{{ $externalreflection->title }}</p>
+                        <div class="flex flex-col">
+                            <time class="text-xs pl-2 text-gray-500">{{$externalreflection->time}}</time>
+                            <p class="p-2 font-bold">{{ $externalreflection->title }}</p>
+                        </div>
                         <p class="rounded-3xl text-white bg-red-600 px-2">{{ $externalreflection->tag }}</p>
                     </div>
                 </a>

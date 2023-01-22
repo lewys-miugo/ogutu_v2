@@ -17,6 +17,7 @@
         </div>
         <div class="content-area p-3 md:max-w-2xl md:mx-auto lg:max-w-6xl">
             <h1 class="font-bold font text-2xl mb-2">{{$internal_publication->title}}</h1>
+            <time class="block text-xs text-gray-500">{{$internal_publication->time}}</time>
             <div>
                 {!!  $internal_publication->content !!}
             </div>
