@@ -30,6 +30,7 @@ class InternalPublicationResource extends Resource
                         ]),
                     Forms\Components\TextInput::make('title'),
                     Forms\Components\TextInput::make('tag'),
+                    Forms\Components\TextInput::make('time'),
                     Forms\Components\FileUpload::make('image'),
                     Forms\Components\RichEditor::make('content')
                 ])
@@ -43,6 +44,7 @@ class InternalPublicationResource extends Resource
                 //
                 Tables\Columns\TextColumn::make('type'),
                 Tables\Columns\TextColumn::make('tag'),
+                Tables\Columns\TextColumn::make('time'),
                 Tables\Columns\TextColumn::make('title'),
                 Tables\Columns\ImageColumn::make('image')
             ])
