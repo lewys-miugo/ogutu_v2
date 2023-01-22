@@ -12,14 +12,14 @@
         <!-- Animated text -->  
         <div
             class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-38 xl:text-7xl font-bold">
-            <span class="text-white">Prof.</span>
-            <p class="text-white">Moses</p>
+            <span class="text-white">Moses</span>
+            <!-- <p class="text-white">Moses</p> -->
             <p class="text-white">Ogutu</p>
         </div>
     </div>
 
     <div class="px-10  bg-white">
-        <div class="container mx-auto py-14 flex flex-col md:flex-col-reverse lg:flex-row items-center gap-20">
+        <div class="container mx-auto py-14 flex flex-col md:flex-col lg:flex-row items-center gap-20">
             <!-- Left -->
             <div class=" lg:w-1/3">
                 <div class="flex flex-col justify-center items-center">
@@ -27,11 +27,11 @@
                         <img class="rounded-full"
                             src="{{asset('storage/'. $bio->picture)}}"
                             alt="">
-                        <p class="m-1 font-black ">{{$bio->name}}</p>
+                        <p class="m-1 font-black text-2xl pb-3 ">{{$bio->name}}</p>
 
                         @foreach($position as $position)
-                        <p class="m-1 font-black">{{$position->title}},</p>
-                        <p class="m-1 font-black text-gray-500">{{$position->institution}}.</p>
+                        <p class="m-1 font-black p-0">{{$position->title}},</p>
+                        <p class="m-1 font-black text-gray-800">{{$position->institution}}.</p>
                         @endforeach
                     
 
@@ -47,7 +47,7 @@
                                 @foreach($education as $education)
                                         <ul class="py-0 m-0">
                                         <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion}}</li>
-                                        <li class="px-5 ">{{$education->institution}}</li>
+                                        <li class="px-auto ">{{$education->institution}}</li>
                                     </ul>
                                 @endforeach                                
                             </ol>
@@ -60,7 +60,7 @@
             <div  class=" lg:w-2/3 my-auto flex flex-col gap-3">
                 <h1 class="text-indigo-600 text-center font-bold text-2xl">About Me</h1>
                 <p class="text-gray-600">
-                    {{$bio->about}} 
+                    {!! $bio->about !!} 
                 </p>
             </div>
         </div>

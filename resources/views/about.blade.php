@@ -21,10 +21,6 @@
 
     <!-- New trial layout -->
     <div class="bg-white pt-6">
-        <!-- <div class="">
-            <h1 class="text-indigo-600 text-center pb-6 font-bold text-2xl">About Me</h1>
-        </div> -->
-<!-- max-w-7xl mx-auto grid grid-cols-12  -->
         <div class="">
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12">
                 <div class="col-span-3 flex flex-col justify-center items-center">
@@ -33,8 +29,8 @@
 
                     @foreach($education as $education)
                                 <ul class="py-0 m-0">
-                                <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion}}</li>
-                                <li class="px-5 ">{{$education->institution}}</li>
+                                <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion }}</li>
+                                <li class="px-5 ">{{$education->institution }}</li>
                             </ul>
                     @endforeach 
                         
@@ -45,11 +41,11 @@
                     <img class="rounded-full"
                          src="{{asset('storage/'. $bio->picture)}}"
                          alt="Profile picture of Moses Ogutu">
-                    <p class="m-1 font-black ">{{$bio->name}}</p>
+                    <p class="m-1 font-black text-2xl pb-3">{{$bio->name}}.</p>
                     
                     @foreach($position as $position)
-                    <p class="m-1 font-black">{{$position->title}},</p>
-                    <p class="m-1 font-black text-gray-500">{{$position->institution}}.</p>
+                    <p class="m-1 font-black p-0">{{$position->title}},</p>
+                    <p class="m-1 font-black text-gray-800">{{$position->institution}}.</p>
                     @endforeach
                 </div>
 
@@ -77,7 +73,7 @@
 
                 <p class="text-gray-600">
                     
-                 {{$bio->about}} 
+                 {!!  $bio->about  !!} 
                 </p>
                 </div>
               
@@ -92,22 +88,7 @@
                                         alt="">
                                 <p class="text-gray-600">{{$gallery->caption}}</p>
                             </div>
-                        @endforeach
-                    
-
-                    <!-- @foreach($gallery as $gallery)
-                        @if($loop->last)
-                            <div class="w-full h-fit shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-2">
-                                <img class="w-fit sm:items-center"
-                                        src="{{asset('storage/'.$gallery->image)}}"
-                                        alt="">
-                                <h1 class="font-medium text-lg">Conference</h1> 
-                                <p class="text-gray-600">{{$gallery->caption}}</p>
-                            </div>
-                        @endif
-                    @endforeach -->
-
-                    
+                        @endforeach                   
 
                 </div>    
             </div>
