@@ -16,6 +16,7 @@ return new class extends Migration {
             $table->id();
             $table->string('type'); // Type is phone_number, social and email
             $table->string('value');
+            $table->string('name');
             $table->timestamps();
         });
     }
