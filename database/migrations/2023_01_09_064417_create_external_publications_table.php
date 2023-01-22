@@ -17,6 +17,8 @@ return new class extends Migration {
             $table->string('type'); // global_trade or global_sustainability
             $table->string('title');
             $table->string('tag');
+            $table->string('time');
+
             $table->string('image');
             $table->string('link');
             $table->timestamps();
