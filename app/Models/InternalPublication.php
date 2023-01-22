@@ -13,6 +13,7 @@ class InternalPublication extends Model
         'type',
         'title',
         'tag',
+        'time',
         'image',
         'content'
     ];

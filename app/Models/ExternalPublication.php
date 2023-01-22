@@ -13,6 +13,7 @@ class ExternalPublication extends Model
         'type',
         'title',
         'tag',
+        'time',
         'image',
         'link'
     ];
