@@ -27,7 +27,7 @@ Route::get('/', function () {
     $bio = Bio::first();
     $position = Position::all();
     $education = Education::all();
-    $contact = Contact::all();
+    $contacts = Contact::all();
     $gallery = Gallery::all();
     $resume = \App\Models\Resume::first();
 
@@ -35,7 +35,7 @@ Route::get('/', function () {
         'bio' => $bio,
         'position' => $position,
         'education' => $education,
-        'contact' => $contact,
+        'contacts' => $contacts,
         'gallery' => $gallery,
         'resume' => $resume,
     ]);
@@ -45,7 +45,7 @@ Route::get('about', function () {
     $bio = Bio::first();
     $position = Position::all();
     $education = Education::all();
-    $contact = Contact::all();
+    $contacts = Contact::all();
     $gallery = Gallery::all();
     $interest = Interest::all();
 
@@ -53,7 +53,7 @@ Route::get('about', function () {
         'bio' => $bio,
         'position' => $position,
         'education' => $education,
-        'contact' => $contact,
+        'contacts' => $contacts,
         'gallery' => $gallery,
         'interest' => $interest,
     ]);
@@ -73,34 +73,33 @@ Route::get('/publications/{reflection}', [PublicationController::class, 'show'])
 
 Route::get('/currentinterests', function () {
     $gallery = Gallery::all();
-    $contact = Contact::all();
+    $contacts = Contact::all();
     $interest = Interest::all();
 
     return view('/currentinterests', [
         'interest' => $interest,
         'gallery' => $gallery,
-        'contact' => $contact,
+        'contacts' => $contacts,
 
     ]);
 });
 
 Route::get('gallery', function () {
     $gallery = Gallery::all();
-    $contact = Contact::all();
+    $contacts = Contact::all();
 
 
     return view('gallery', [
-        'contact' => $contact,
+        'contacts' => $contacts,
         'gallery' => $gallery,
     ]);
 });
 
 Route::get('postview', function () {
 
-    $contact = Contact::all();
+    $contacts = Contact::all();
 
     return view('postview', [
-        'contact' => $contact,
-
+        'contact' => $contacts,
     ]);
 });

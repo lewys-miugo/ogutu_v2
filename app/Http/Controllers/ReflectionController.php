@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
-use App\Models\InternalReflection;
 use App\Models\ExternalReflection;
+use App\Models\InternalReflection;
 
 class ReflectionController extends Controller
 {
@@ -12,7 +12,7 @@ class ReflectionController extends Controller
     public function index()
     {
         return view('reflections.index', [
-            'contact' => Contact::all(),
+            'contacts' => Contact::all(),
             'internalreflections' => InternalReflection::all()->sortByDesc('created_at'),
             'externalreflections' => ExternalReflection::all()->sortByDesc('created_at')
         ]);
@@ -21,7 +21,7 @@ class ReflectionController extends Controller
     public function show($reflection)
     {
         return view('reflections.show', [
-            'contact' => Contact::all(),
+            'contacts' => Contact::all(),
             'internal_reflection' => InternalReflection::where('id', $reflection)->firstOrFail(),
         ]);
     }
