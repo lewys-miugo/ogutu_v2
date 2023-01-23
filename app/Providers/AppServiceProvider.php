@@ -53,7 +53,11 @@ class AppServiceProvider extends ServiceProvider
                 ...InternalReflectionResource::getNavigationItems(),
                 ...ExternalReflectionResource::getNavigationItems(),
                 ...InternalPublicationResource::getNavigationItems(),
-                ...ExternalPublicationResource::getNavigationItems()
+                ...ExternalPublicationResource::getNavigationItems(),
+                NavigationItem::make('CV')
+                    ->icon('heroicon-o-document-text')
+                    ->isActiveWhen(fn(): bool => request()->routeIs('filament.resources.resumes.*'))
+                    ->url(route('filament.resources.resumes.edit', 3)),
             ]);
         });
 
