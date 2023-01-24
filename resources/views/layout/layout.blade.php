@@ -184,7 +184,7 @@
                 <div class="pt-8 mt-8 border-t border-gray-100">
 
                     <p class="mt-8 text-xs text-gray-500">
-                        &copy; 2023. Built by <a href="#">lewys</a>. All rights reserved.
+                        &copy; <script>document.write(new Date().getFullYear())</script>. Built by <a target="_blank" href="https://github.com/lewys-miugo">lewys</a>. All rights reserved.
                     </p>
                 </div>
             </div>
