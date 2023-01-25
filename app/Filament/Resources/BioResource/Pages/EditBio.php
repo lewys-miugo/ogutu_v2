@@ -16,4 +16,9 @@ class EditBio extends EditRecord
             Actions\DeleteAction::make()->hidden(),
         ];
     }
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('view', ['record' => $this->record]);
+    }
 }
