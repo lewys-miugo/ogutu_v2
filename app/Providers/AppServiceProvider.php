@@ -57,7 +57,7 @@ class AppServiceProvider extends ServiceProvider
                 NavigationItem::make('CV')
                     ->icon('heroicon-o-document-text')
                     ->isActiveWhen(fn(): bool => request()->routeIs('filament.resources.resumes.*'))
-                    ->url(route('filament.resources.resumes.edit', 3)),
+                    ->url(route('filament.resources.resumes.edit', 1)),
             ]);
         });
 
