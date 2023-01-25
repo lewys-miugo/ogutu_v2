@@ -23,8 +23,8 @@ class InterestResource extends Resource
             ->schema([
                 //
                 Forms\Components\Card::make()->schema([
-                    Forms\Components\TextInput::make('title'),
-                    Forms\Components\RichEditor::make('content')
+                    Forms\Components\TextInput::make('title')->required(),
+                    Forms\Components\RichEditor::make('content')->required()
                 ])
             ]);
     }

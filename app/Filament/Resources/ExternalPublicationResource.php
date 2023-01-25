@@ -27,12 +27,12 @@ class ExternalPublicationResource extends Resource
                         ->options([
                             "global_trade" => "Global Trade & Investment",
                             "global_sustainability" => "Global Sustainability"
-                        ]),
-                    Forms\Components\TextInput::make('title'),
-                    Forms\Components\TextInput::make('tag'),
-                    Forms\Components\TextInput::make('time'),
-                    Forms\Components\FileUpload::make('image'),
-                    Forms\Components\TextInput::make('link')
+                        ])->required(),
+                    Forms\Components\TextInput::make('title')->required(),
+                    Forms\Components\TextInput::make('tag')->required(),
+                    Forms\Components\TextInput::make('time')->required(),
+                    Forms\Components\FileUpload::make('image')->required(),
+                    Forms\Components\TextInput::make('link')->required()
                 ])
             ]);
     }
