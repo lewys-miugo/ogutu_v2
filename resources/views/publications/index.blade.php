@@ -27,7 +27,7 @@
             @foreach($internalpublications as $internalpublication)
                 @if($internalpublication->type=="global_sustainability")
                 <a target="_blank" href="{{route('publications.show', $internalpublication->id)}}"
-                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
+                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-auto rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$internalpublication->image}") }} alt="">
@@ -47,7 +47,7 @@
             @foreach($externalpublications as $externalpublication)
                 @if($externalpublication->type=="global_sustainability")
                 <a target="_blank" href="{{$externalpublication->link}}"
-                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
+                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-auto rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$externalpublication->image}") }} alt="">
@@ -72,7 +72,7 @@
             @foreach($internalpublications as $internalpublication)
                 @if($internalpublication->type=="global_trade")
                 <a target="_blank" href="{{route('publications.show', $internalpublication->id)}}"
-                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
+                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-auto rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$internalpublication->image}") }} alt="">
@@ -93,7 +93,7 @@
             @foreach($externalpublications as $externalpublication)
                 @if($externalpublication->type=="global_trade")
                 <a target="_blank" href="{{$externalpublication->link}}"
-                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-64 rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
+                   class="transition duration-200 ease-out transform hover:scale-105 my-2 w-5/6 h-auto rounded shadow-2xl md:w-2/5 lg:w-2/5 mx-2">
                     <img
                         class="w-full h-4/5 object-cover rounded-t"
                         src={{ asset("storage/{$externalpublication->image}") }} alt="">
