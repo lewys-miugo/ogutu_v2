@@ -103,3 +103,13 @@ Route::get('postview', function () {
         'contact' => $contacts,
     ]);
 });
+
+//Add this to bluehost
+//Route::get("/storage/{extra}", function ($extra) {
+//    return redirect("/public/storage/$extra");
+//})->where('extra', '.*');
+
+// Use this to run the storage link artisan command.
+// Route::get('/foo', function () {
+//     Artisan::call('storage:link');
+// });
