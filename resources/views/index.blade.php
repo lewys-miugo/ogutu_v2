@@ -26,11 +26,11 @@
                     <img class="rounded-full"
                          src="{{asset('storage/'. $bio->picture)}}"
                          alt="">
-                    <p class="m-1 font-black text-2xl pb-3 ">{{$bio->name}}</p>
+                    <p class="m-1 font-black text-center text-2xl pb-3 ">{{$bio->name}}</p>
 
                     @foreach($position as $position)
-                        <p class="m-1 font-black p-0">{{$position->title}},</p>
-                        <p class="m-1 font-black text-gray-800">{{$position->institution}}.</p>
+                        <p class="m-1 font-black text-center p-0">{{$position->title}},</p>
+                        <p class="m-1 font-black text-center text-gray-800">{{$position->institution}}.</p>
                     @endforeach
 
 
