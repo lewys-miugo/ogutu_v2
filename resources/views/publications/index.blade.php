@@ -65,8 +65,7 @@
 
         {{--     global_trade Publication container--}}
 
-
-        <h2 class="text-2xl mt-4 text-indigo-400 bg-white font-bold text-center">Social Change & Leadership in Africa Publications</h2>
+        <h2 class="text-2xl mt-4 text-indigo-600 bg-white font-bold text-center">Global Trade and Investments</h2>
         <div class="flex flex-col mt-3 md:flex-row md:flex-wrap justify-center items-center">
             
             @foreach($internalpublications as $internalpublication)
