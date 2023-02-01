@@ -28,8 +28,8 @@
                     <ol class="">
 
                     @foreach($education as $education)
-                        <ul class="py-2 px-5 m-5">
-                            <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion }}</li>
+                        <ul class="py-2 text-center px-5 m-5">
+                            <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion }} at</li>
                             <li class="px-5 ">{{$education->institution }}</li>
                         </ul>
                     @endforeach 
@@ -55,7 +55,7 @@
 
                         <ol class="py-3 list-disc">
                             @foreach($interest as $interest)
-                            <li class="text-gray-700 text-center">{{$interest->title}}</li> 
+                            <li class="text-gray-700">{{$interest->title}}</li> 
                             @endforeach                            
                         </ol>
                     </div>
@@ -68,7 +68,7 @@
     <div class="bg-white">
         <div id="experience" class="py-10 flex flex-col lg:flex-row item-center gap-20 bg-white">
                 <!-- Left -->
-                <div class="lg:w-2/3 px-10 mx-3 my-auto flex flex-col gap-3 ">
+                <div class="lg:w-2/3 px-7 mx-3 my-auto flex flex-col gap-3 ">
                     <h1 class="text-indigo-600 text-center font-bold text-2xl">About Me</h1>
 
                     <p class="text-gray-600 ">
