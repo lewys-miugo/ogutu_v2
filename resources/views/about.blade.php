@@ -5,7 +5,7 @@
 @section('content')
 <!-- component -->
     <div class=" h-1/2 lg:h-screen bg-white relative md:z-10">
-        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-full w-full object-cover"
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-full shadow-xl w-full object-cover"
              src="{{url('/images/i8.jpeg')}}"
              alt="">
 
@@ -28,10 +28,10 @@
                     <ol class="">
 
                     @foreach($education as $education)
-                                <ul class="py-0 m-0">
-                                <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion }}</li>
-                                <li class="px-5 ">{{$education->institution }}</li>
-                            </ul>
+                        <ul class="py-2 px-5 m-5">
+                            <li class="font-bold flex flex-row gap-2"><span class=""><ion-icon name="school"></ion-icon></span> {{$education->degree}},{{$education->year_of_completion }}</li>
+                            <li class="px-5 ">{{$education->institution }}</li>
+                        </ul>
                     @endforeach 
                         
                         
@@ -44,8 +44,8 @@
                     <p class="m-1 font-black text-2xl pb-3">{{$bio->name}}.</p>
                     
                     @foreach($position as $position)
-                    <p class="m-1 font-black p-0">{{$position->title}},</p>
-                    <p class="m-1 font-black text-gray-800">{{$position->institution}}.</p>
+                    <p class="m-1 font-black text-center p-0">{{$position->title}},</p>
+                    <p class="m-1 font-black text-center text-gray-800">{{$position->institution}}.</p>
                     @endforeach
                 </div>
 
@@ -55,7 +55,7 @@
 
                         <ol class="py-3 list-disc">
                             @foreach($interest as $interest)
-                            <li class="text-gray-700">{{$interest->title}}</li> 
+                            <li class="text-gray-700 text-center">{{$interest->title}}</li> 
                             @endforeach                            
                         </ol>
                     </div>
@@ -66,20 +66,19 @@
 
 
     <div class="bg-white">
-        <div id="experience" class="container mx-auto py-10 flex flex-col lg:flex-row item-center gap-20 bg-white">
+        <div id="experience" class="py-10 flex flex-col lg:flex-row item-center gap-20 bg-white">
                 <!-- Left -->
-                <div class="lg:w-2/3 my-auto flex flex-col gap-3 ">
+                <div class="lg:w-2/3 px-10 mx-3 my-auto flex flex-col gap-3 ">
                     <h1 class="text-indigo-600 text-center font-bold text-2xl">About Me</h1>
 
-                <p class="text-gray-600">
-                    
-                 {!!  $bio->about  !!} 
-                </p>
+                    <p class="text-gray-600 ">
+                        {!!  $bio->about  !!} 
+                    </p>
                 </div>
               
                 <!-- <div class="my-auto flex justify-center item-center lg:w-1/3">                    
                 </div> -->
-                <div class="p-5 lg:p-0 lg:w-1/3 flex flex-wrap justify-between">
+                <div class="p-5 lg:p-3 lg:w-1/3 flex flex-wrap justify-between">
                         @foreach($gallery->slice(0,2) as $gallery)
                             <div class="w-full shadow-xl rounded-lg p-5 my-3 md:my-3 flex flex-col gap-2">
 
