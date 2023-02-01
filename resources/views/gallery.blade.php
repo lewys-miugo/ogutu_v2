@@ -4,7 +4,7 @@
 @section('content')
         <!-- BANNER -->
     <div class=" h-1/2 lg:h-screen bg-white relative md:z-10">
-        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-full w-full object-cover"
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto shadow-xl h-full w-full object-cover"
              src="{{url('/images/i8.jpeg')}}"
              alt="">
 
