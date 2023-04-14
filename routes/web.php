@@ -21,6 +21,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('about',function () {
+    return view('about');
+});
+
+Route::get('profile',function () {
+    return view('profile');
+});
+
+Route::get('blog',function () {
+    return view('blog');
+});
+
+Route::get('academia',function() {
+    return view('academia');
+});
 
 Route::get('/', function () {
 
