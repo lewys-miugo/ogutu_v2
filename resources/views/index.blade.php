@@ -1,4 +1,5 @@
 @extends('layout.layout')
+@section('title') {{'Home'}}@endsection
 @section('content')
     <!-- <img src="{{url('/images/i6.jpeg')}}" alt="Image"/> -->
 
