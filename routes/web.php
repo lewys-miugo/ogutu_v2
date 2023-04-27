@@ -44,7 +44,12 @@ Route::get('profile',function () {
 });
 
 Route::get('blog',function () {
-    return view('blog');
+    $contacts = Contact::all();
+
+    return view('blog',[
+        'contacts' => $contacts,
+
+    ]);
 });
 
 Route::get('academia',function() {
