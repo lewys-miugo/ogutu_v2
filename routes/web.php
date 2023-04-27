@@ -53,7 +53,11 @@ Route::get('blog',function () {
 });
 
 Route::get('academia',function() {
-    return view('academia');
+    $contacts = Contact::all();
+
+    return view('academia',[
+        'contacts'=> $contacts,
+    ]);
 });
 
 Route::get('/', function () {
