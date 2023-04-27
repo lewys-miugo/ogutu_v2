@@ -21,12 +21,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('about',function () {
-    return view('about');
-});
+// Route::get('about',function () {
+//     return view('about');
+// });
 
 Route::get('profile',function () {
-    return view('profile');
+    $bio = Bio::first();
+    $position = Position::all();
+    $education = Education::all();
+    $contacts = Contact::all();
+    $gallery = Gallery::all();
+    $interest = Interest::all();
+
+    return view('profile',[
+        'bio' => $bio,
+        'position' => $position,
+        'education' => $education,
+        'contacts' => $contacts,
+        'gallery' => $gallery,
+        'interest' => $interest,
+    ]);
 });
 
 Route::get('blog',function () {
