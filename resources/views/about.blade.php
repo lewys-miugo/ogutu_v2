@@ -167,7 +167,7 @@
 
     <!-- ====== Gallery Section Start -->
         
-    <section class="bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+    <section id="gallery" class="bg-white pt-20 pb-10 lg:pt-[120px] lg:pb-20">
 
         <div class="m-4 lg:ml-20">
             <img src="/images/box_logo.png" class="h-14 w-14" alt="">
