@@ -36,3 +36,5 @@ php artisan migrate --seed
 ```
 composer update --no-scripts
 ```
+8. flowbite documentation
+https://flowbite.com/docs/getting-started/laravel/
