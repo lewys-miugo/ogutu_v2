@@ -5,7 +5,7 @@
 
 @section('content')
         <!-- BANNER -->
-    <!-- <div class=" h-1/2 lg:h-screen bg-white relative md:z-10">
+    <div class=" h-1/2 lg:h-screen bg-white relative md:z-10">
         <img class="absolute bottom-0 right-0 lg:left-0 mx-auto shadow-xl h-full w-full object-cover"
              src="{{url('/images/i8.jpeg')}}"
              alt="">
@@ -17,8 +17,8 @@
             <p class="text-white">&</p>
             <p class="text-white">Media</p>
         </div>
-    </div> -->
-    <!-- <div class="bg-white">
+    </div>
+    <div class="bg-white">
         <div class="container mx-auto  lg:w-full bg-white ">
                         
             <div class="flex flex-col gap-3 items-center">
@@ -40,9 +40,5 @@
                 @endforeach
             </div>
         </div> 
-    </div> -->
+    </div>
 @endsection
-<!-- Don't delete it affects the layout -->
-<!-- <body>
-</body>
-</html> -->
