@@ -180,14 +180,13 @@
                 <div class="w-full px-4 md:w-1/2 xl:w-1/3">
                     <div class="mb-10 overflow-hidden rounded-lg bg-white shadow-xl">
                         <img
-                            src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-01.jpg"
+                            src="/images/AR2_0265.jpg"
                             alt="image"
                             class="w-full"
                         />
                         <div class="p-2 text-center sm:p-2 md:p-2 xl:p-4">
                             <p class="text-body-color  text-base hover:leading-relaxed">
-                            Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
-                            Lorem consectetur adipiscing elit.
+                            <!-- Lorem -->
                             </p>
                         </div>
                     </div>
@@ -196,66 +195,19 @@
                 <div class="w-full px-4 md:w-1/2 xl:w-1/3">
                     <div class="mb-10 overflow-hidden rounded-lg bg-white shadow-xl">
                         <img
-                            src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-03.jpg"
+                            src="/images/AR2_0272.jpg"
                             alt="image"
                             class="w-full"
                         />
                         <div class="p-2 text-center sm:p-2 md:p-2 xl:p-4">
                             <p class="text-body-color  text-base hover:leading-relaxed">
-                            Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
-                            Lorem consectetur adipiscing elit.
+                            <!-- Lorem -->
                             </p>
                         </div>
                     </div>
                 </div>
                 <!-- 1.3 card -->
-                <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                    <div class="mb-10 overflow-hidden rounded-lg bg-white shadow-xl">
-                        <img
-                            src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-01.jpg"
-                            alt="image"
-                            class="w-full"
-                        />
-                        <div class="p-2 text-center sm:p-2 md:p-2 xl:p-4">
-                            <p class="text-body-color  text-base hover:leading-relaxed">
-                            Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
-                            Lorem consectetur adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 1.4 card -->
-                <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                    <div class="mb-10 overflow-hidden rounded-lg bg-white shadow-xl">
-                        <img
-                            src="https://cdn.tailgrids.com/2.0/image/application/images/cards/card-01/image-02.jpg"
-                            alt="image"
-                            class="w-full"
-                        />
-                        <div class="p-2 text-center sm:p-2 md:p-2 xl:p-4">
-                            <p class="text-body-color  text-base hover:leading-relaxed">
-                            Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
-                            Lorem consectetur adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 1.5 card -->
-                <div class="w-full px-4 md:w-1/2 xl:w-1/3">
-                    <div class="mb-10 overflow-hidden rounded-lg bg-white shadow-xl">
-                        <img
-                            src="https://imgs.search.brave.com/qq-asKPD1fMmtTogV3rgmubwpGxP1oen_xQLwc7F-Xc/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5a/TzRUbVVieE01LVYx/UjdiYkRwTUhRSGFF/SyZwaWQ9QXBp"
-                            alt="image"
-                            class="w-full"
-                        />
-                        <div class="p-2 text-center sm:p-2 md:p-2 xl:p-4">
-                            <p class="text-body-color  text-base hover:leading-relaxed">
-                            Lorem ipsum dolor sit amet pretium consectetur adipiscing elit.
-                            Lorem consectetur adipiscing elit.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                
                 
             </div>
         </div>
