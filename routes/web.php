@@ -62,20 +62,20 @@ Route::get('academia',function() {
 
 Route::get('/', function () {
 
-    $bio = Bio::first();
-    $position = Position::all();
-    $education = Education::all();
-    $contacts = Contact::all();
-    $gallery = Gallery::all();
-    $resume = \App\Models\Resume::first();
+    // $bio = Bio::first();
+    // $position = Position::all();
+    // $education = Education::all();
+    // $contacts = Contact::all();
+    // $gallery = Gallery::all();
+    // $resume = \App\Models\Resume::first();
 
     return view('index', [
-        'bio' => $bio,
-        'position' => $position,
-        'education' => $education,
-        'contacts' => $contacts,
-        'gallery' => $gallery,
-        'resume' => $resume,
+        // 'bio' => $bio,
+        // 'position' => $position,
+        // 'education' => $education,
+        // 'contacts' => $contacts,
+        // 'gallery' => $gallery,
+        // 'resume' => $resume,
     ]);
 });
 
