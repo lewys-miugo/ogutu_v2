@@ -174,7 +174,7 @@
                         
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
                             <p>
-                                Prof. Ndemo has over 20 years of business, finance and technology expertise gained…
+                                Moses Ogutu has over 20 years of business, finance and technology expertise gained…
                             </p>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
 
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
                             <p>
-                                Prof. Ndemo has over 20 years of business, finance and technology expertise gained…
+                                Moses Ogutu has over 20 years of business, finance and technology expertise gained…
                             </p>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                     <div class="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
                             <p>
-                                Prof. Ndemo has over 20 years of business, finance and technology expertise gained…
+                                Moses Ogutu has over 20 years of business, finance and technology expertise gained…
                             </p>
                         </div>
                         <!-- End: /typography/_h3.antlers.html -->
@@ -257,7 +257,7 @@
                     <div class="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
                             <p>
-                                Prof. Ndemo has over 20 years of business, finance and technology expertise gained…
+                                Moses Ogutu has over 20 years of business, finance and technology expertise gained…
                             </p>
                         </div>
                     </div>
