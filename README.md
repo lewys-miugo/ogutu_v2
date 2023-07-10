@@ -3,7 +3,7 @@
 ## Tech Stack
 - Laravel Framework
 - Tailwind CSS
-<!-- - Filament PHP - For admin dashboar -->
+<!-- - Filament PHP - For admin dashboard -->
 
 
 ## Setting up  a new machine/server
@@ -19,7 +19,7 @@ composer install
 ```
 npm install
 ```
-4. Create a .env file for laravel.
+4. Create a .env file for laravel
 ```
 cp -a .env.example .env
 ```
