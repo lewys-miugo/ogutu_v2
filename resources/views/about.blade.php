@@ -22,7 +22,7 @@
                         <img src="/images/box_logo.png" class="mt-8 h-12 w-12" alt="">
                         <div class="ml-12">
                             <h1 class="max-w-2xl mb-4 text-bluetange text-xsitangeh font-extrabold tracking-tight leading-none ">Prof  Moses  Ogutu</h1>
-                            <p class="max-w-2xl mb-6 text-bluetange font-semibold lg:mb-8 md:text-lg lg:text-xl dark:text-gray-600">I am a global technocrat and currently serving as Kenya’s Ambassador to Belgium. Previously, I was the Permanent Secretary of Kenya’s Ministry of Information and Communication.</p>
+                            <p class="max-w-2xl mb-6 text-bluetange font-semibold lg:mb-8 md:text-lg lg:text-xl">I am a global technocrat and currently serving as Kenya’s Ambassador to Belgium. Previously, I was the Permanent Secretary of Kenya’s Ministry of Information and Communication.</p>
                             <a href="{{'profile'}}" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-semibold text-center text-bluetange border border-gray-300 rounded-lg bg-orangelink hover:bg-gray-100 focus:ring-4 focus:ring-blue-500">
                                 Read Full Profile
                             </a> 
@@ -50,17 +50,17 @@
     </div>
     <div class='flex items-center flex-wrap  justify-center flex-col-2 mt-8 py-4 min-h-screen p-2 m-2 lg:mx-32 from-gray-700 via-gray-800 to-gray-900 bg-gradient-to-br'>
         <!-- Card 1 -->
-        <div class="relative w-full group max-w-lg w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
+        <div class="relative w-full group max-w-lg w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl md:max-w-sm rounded-xl">
             <div class="pb-6">
                 <div class="flex flex-wrap justify-center">
                     <div class="flex justify-center w-full">
                         <div class="relative">
-                            <img src="/images/no_tie_shot.jpg" class="dark:shadow-xl border-blue-400 dark:border-gray-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
+                            <img src="/images/no_tie_shot.jpg" class="dark:shadow-xl border-blue-400 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
                         </div>
                     </div>
                 </div>
                 <div class="mt-2 mt-20 pt-2 text-center">
-                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange dark:text-gray-300">Profile</h3>
+                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange">Profile</h3>
                     <div class="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
                         
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
@@ -76,17 +76,17 @@
             </div>   
         </div>
         <!-- Card2 -->
-        <div class="relative w-full group max-w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
+        <div class="relative w-full group max-w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl md:max-w-sm rounded-xl">
             <div class="pb-6">
                 <div class="flex flex-wrap justify-center">
                     <div class="flex justify-center w-full">
                         <div class="relative">
-                            <img src="/images/profileimg-removebg-preview.png" class="dark:shadow-xl border-blue-400 dark:border-gray-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
+                            <img src="/images/profileimg-removebg-preview.png" class="dark:shadow-xl border-blue-400 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
                         </div>
                     </div>
                 </div>
                 <div class="m-2 mt-20 pt-2 text-center">
-                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange dark:text-gray-300">Key Experience</h3>
+                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange">Key Experience</h3>
                     <div class="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
 
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
@@ -103,17 +103,17 @@
             </div>   
         </div>
         <!-- Card 3 -->
-        <div class="relative w-full group max-w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
+        <div class="relative w-full group max-w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl md:max-w-sm rounded-xl">
             <div class="pb-6">
                 <div class="flex flex-wrap justify-center">
                     <div class="flex justify-center w-full">
                         <div class="relative">
-                            <img src="/images/tie_shot.jpg" class="dark:shadow-xl border-blue-400 dark:border-gray-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
+                            <img src="/images/tie_shot.jpg" class="dark:shadow-xl border-blue-400 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
                         </div>
                     </div>
                 </div>
                 <div class="mt-2 mt-20 pt-2 text-center">
-                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange dark:text-gray-300">Membership & Honors</h3>
+                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange">Membership & Honors</h3>
                     <div class="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
                             <p>
@@ -134,17 +134,17 @@
             </div>   
         </div>
         <!-- card 4 -->
-        <div class="relative w-full group max-w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
+        <div class="relative w-full group max-w-lg min-w-0 mx-auto mt-12 mb-12 break-words bg-white border shadow-2xl md:max-w-sm rounded-xl">
             <div class="pb-6">
                 <div class="flex flex-wrap justify-center">
                     <div class="flex justify-center w-full">
                         <div class="relative">
-                            <img src="/images/ruto2.jpeg" class="dark:shadow-xl border-blue-400 dark:border-gray-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
+                            <img src="/images/ruto2.jpeg" class="dark:shadow-xl border-blue-400 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
                         </div>
                     </div>
                 </div>
                 <div class="mt-2 mt-20 pt-2 text-center">
-                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange dark:text-gray-300">Talks & Conferences</h3>
+                    <h3 class="mb-1 font-bold leading-normal text-xxl text-bluetange">Talks & Conferences</h3>
                     <div class="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
                         <div class="text-base font-normal tracking-tight text-gray-600 font-mono ">
                             <p>
