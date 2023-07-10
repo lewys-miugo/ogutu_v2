@@ -3,6 +3,17 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\HomeComponent;
+use App\Http\Livewire\AboutComponent;
+use App\Http\Livewire\AcademiaComponent;
+use App\Http\Livewire\BlogComponent;
+use App\Http\Livewire\InterestComponent;
+use App\Http\Livewire\GalleryComponent;
+use App\Http\Livewire\ProfileComponent;
+
+
+
+
+
 
 
 /*
@@ -20,3 +31,11 @@ use App\Http\Livewire\HomeComponent;
 // });
 
 Route::get('/',HomeComponent::class)->name('home.index');
+Route::get('/about',AboutComponent::class)->name('about.index');
+Route::get('/academia',AcademiaComponent::class)->name('academia.index');
+Route::get('/blog',BlogComponent::class)->name('blog.index');
+Route::get('/interest',InterestComponent::class)->name('interest.index');
+Route::get('/gallery',GalleryComponent::class)->name('gallery.index');
+Route::get('/profile',ProfileComponent::class)->name('profile.index');
+
+
