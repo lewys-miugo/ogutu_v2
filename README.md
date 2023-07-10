@@ -3,10 +3,10 @@
 ## Tech Stack
 - Laravel Framework
 - Tailwind CSS
-<!-- - Filament PHP - For admin dashboard -->
+<!-- - Filament PHP - For admin dashboar -->
 
 
-## Setting up in a new machine/server
+## Setting up  a new machine/server
 1. Clone the repository
 ```
 git clone git@github.com:lewys-miugo/ogutu_personal2.git
@@ -19,7 +19,7 @@ composer install
 ```
 npm install
 ```
-4. Create an .env file for laravel
+4. Create a .env file for laravel.
 ```
 cp -a .env.example .env
 ```
@@ -32,9 +32,9 @@ php artisan key:generate
 ``` 
 php artisan migrate --seed
 ```
-7. Incase of error run:
+7. Incase of an error run:
 ```
 composer update --no-scripts
 ```
-8. flowbite documentation
+8. Flowbite documentation
 https://flowbite.com/docs/getting-started/laravel/

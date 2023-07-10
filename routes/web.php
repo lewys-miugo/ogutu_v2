@@ -26,37 +26,23 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('profile',function () {
-    $bio = Bio::first();
-    $position = Position::all();
-    $education = Education::all();
-    $contacts = Contact::all();
-    $gallery = Gallery::all();
-    $interest = Interest::all();
+    
 
     return view('profile',[
-        'bio' => $bio,
-        'position' => $position,
-        'education' => $education,
-        'contacts' => $contacts,
-        'gallery' => $gallery,
-        'interest' => $interest,
+        
     ]);
 });
 
 Route::get('blog',function () {
-    $contacts = Contact::all();
 
     return view('blog',[
-        'contacts' => $contacts,
 
     ]);
 });
 
 Route::get('academia',function() {
-    $contacts = Contact::all();
 
     return view('academia',[
-        'contacts'=> $contacts,
     ]);
 });
 
@@ -80,20 +66,10 @@ Route::get('/', function () {
 });
 
 Route::get('about', function () {
-    $bio = Bio::first();
-    $position = Position::all();
-    $education = Education::all();
-    $contacts = Contact::all();
-    $gallery = Gallery::all();
-    $interest = Interest::all();
+    
 
     return view('about', [
-        'bio' => $bio,
-        'position' => $position,
-        'education' => $education,
-        'contacts' => $contacts,
-        'gallery' => $gallery,
-        'interest' => $interest,
+        
     ]);
 });
 
@@ -110,35 +86,25 @@ Route::get('/publications/{reflection}', [PublicationController::class, 'show'])
 // });
 
 Route::get('/currentinterests', function () {
-    $gallery = Gallery::all();
-    $contacts = Contact::all();
-    $interest = Interest::all();
+    
 
     return view('/currentinterests', [
-        'interest' => $interest,
-        'gallery' => $gallery,
-        'contacts' => $contacts,
 
     ]);
 });
 
 Route::get('gallery', function () {
-    $gallery = Gallery::all();
-    $contacts = Contact::all();
 
 
     return view('gallery', [
-        'contacts' => $contacts,
-        'gallery' => $gallery,
+
     ]);
 });
 
 Route::get('postview', function () {
 
-    $contacts = Contact::all();
 
     return view('postview', [
-        'contact' => $contacts,
     ]);
 });
 
