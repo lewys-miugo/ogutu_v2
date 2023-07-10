@@ -3,7 +3,7 @@
 ## Tech Stack
 - Laravel Framework
 - Tailwind CSS
-- Filament PHP - For admin dashboard
+<!-- - Filament PHP - For admin dashboard -->
 
 
 ## Setting up in a new machine/server
