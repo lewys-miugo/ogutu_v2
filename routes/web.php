@@ -2,6 +2,7 @@
 
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\HomeComponent;
 
 
 /*
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 //     return view('about');
 // });
 
+Route::get('/',HomeComponent::class)->name('home.index');
