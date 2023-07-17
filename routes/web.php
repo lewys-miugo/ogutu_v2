@@ -25,23 +25,23 @@ use App\Http\Livewire\MaintenanceComponent;
 |
 */
 
-Route::get('/',MaintenanceComponent::class)->name('maintenance.index');
-Route::get('/about',MaintenanceComponent::class)->name('maintenance.index');
-Route::get('/academia',MaintenanceComponent::class)->name('maintenance.index');
-Route::get('/blog',MaintenanceComponent::class)->name('maintenance.index');
-Route::get('/interest',MaintenanceComponent::class)->name('maintenance.index');
-Route::get('/gallery',MaintenanceComponent::class)->name('maintenance.index');
-Route::get('/profile',MaintenanceComponent::class)->name('maintenance.index');
-Route::get('/maintenance',MaintenanceComponent::class)->name('maintenance.index');
-
-// Route::get('/',HomeComponent::class)->name('home.index');
-// Route::get('/about',AboutComponent::class)->name('about.index');
-// Route::get('/academia',AcademiaComponent::class)->name('academia.index');
-// Route::get('/blog',BlogComponent::class)->name('blog.index');
-// Route::get('/interest',InterestComponent::class)->name('interest.index');
-// Route::get('/gallery',GalleryComponent::class)->name('gallery.index');
-// Route::get('/profile',ProfileComponent::class)->name('profile.index');
+// Route::get('/',MaintenanceComponent::class)->name('maintenance.index');
+// Route::get('/about',MaintenanceComponent::class)->name('maintenance.index');
+// Route::get('/academia',MaintenanceComponent::class)->name('maintenance.index');
+// Route::get('/blog',MaintenanceComponent::class)->name('maintenance.index');
+// Route::get('/interest',MaintenanceComponent::class)->name('maintenance.index');
+// Route::get('/gallery',MaintenanceComponent::class)->name('maintenance.index');
+// Route::get('/profile',MaintenanceComponent::class)->name('maintenance.index');
 // Route::get('/maintenance',MaintenanceComponent::class)->name('maintenance.index');
+
+Route::get('/',HomeComponent::class)->name('home.index');
+Route::get('/about',AboutComponent::class)->name('about.index');
+Route::get('/academia',AcademiaComponent::class)->name('academia.index');
+Route::get('/blog',BlogComponent::class)->name('blog.index');
+Route::get('/interest',InterestComponent::class)->name('interest.index');
+Route::get('/gallery',GalleryComponent::class)->name('gallery.index');
+Route::get('/profile',ProfileComponent::class)->name('profile.index');
+Route::get('/maintenance',MaintenanceComponent::class)->name('maintenance.index');
 
 
 // Route::get('/', function () {
