@@ -17,11 +17,24 @@
 
             </ul>
         </nav> -->
-        <ul class="flex space-x-4 text-white">
+        <ul class="flex space-x-2 text-white flex-wrap divide-x">
             <!-- Navbar links -->
-            <li><a href="#" class="hover:text-gray-200">Home</a></li>
-            <li><a href="#" class="hover:text-gray-200">About</a></li>
-            <li><a href="#" class="hover:text-gray-200">Services</a></li>
-            <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+            <li><a href="{{route('admin.home.banner')}}" class="hover:text-bluetange font-semibold">Home-Banner</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Home-Bio</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2 ">Home-About</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2 ">P-Cards</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">About-Banner</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Academia-Banner</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Education</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Publications</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Reflections</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Articles</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Gallery</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Profile-Banner</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Position</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Professional-Profile</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Interests</a></li>
+            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Special-assignments</a></li>
+
         </ul>
 </div>

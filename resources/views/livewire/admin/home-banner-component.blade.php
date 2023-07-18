@@ -4,7 +4,7 @@
     
 
     <div class="">
-    <div class="h-12 bg-gray-100">
+    <div class="h-auto bg-gray-100">
         <!-- Navbar -->
         <nav class="bg-blue-500 py-2">
             <div class="container mx-auto px-4">

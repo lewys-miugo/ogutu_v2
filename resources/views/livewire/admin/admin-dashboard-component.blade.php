@@ -1,29 +1,22 @@
 <div>
 @section('title') {{'Dashboard'}}@endsection
     {{-- If you look to others for fulfillment, you will never truly be fulfilled. --}}
-    <div class="flex h-screen">
-  <!-- Sidebar -->
-  <div class="w-1/4 bg-gray-200">
-    <!-- Sidebar content -->
-    <nav class="p-4">
-      <ul class="space-y-4">
-        <!-- Sidebar links -->
-        <li><a href="{{route('admin.home.banner')}}" class="text-blue-500">Link 1</a></li>
-        <li><a href="#" class="text-blue-500">Link 245</a></li>
-        <li><a href="#" class="text-blue-500">Link 3</a></li>
-        <li><a href="#" class="text-blue-500">Link 4</a></li>
-        <li><a href="#" class="text-blue-500">Link 5</a></li>
-        <li><a href="#" class="text-blue-500">Link 6</a></li>
-      </ul>
-    </nav>
-  </div>
+    <div class="h-12 bg-gray-100">
+        <!-- Navbar -->
+        <nav class="bg-blue-500 py-2">
+            <div class="container mx-auto px-4">
+            <!-- Navbar content -->
+                @livewire('admin.admin-dashboard-nav-component')
+            </div>
+        </nav>
 
-  <!-- Main Content -->
-  <div class="w-3/4 bg-white p-8">
-    <!-- Selected page content -->
-    <h1 class="text-3xl font-bold">Selected Page</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </div>
-</div>
+        <!-- Main Content -->
+        <!-- <div class="container flex flex-col  justify-center  px-4 py-8">
+            Content
+            <h1 class="text-3xl font-bold">Welcome to the Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
+        </div> -->
+    </div>
 
 </div>
