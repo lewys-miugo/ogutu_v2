@@ -11,7 +11,9 @@ use App\Http\Livewire\InterestComponent;
 use App\Http\Livewire\GalleryComponent;
 use App\Http\Livewire\ProfileComponent;
 use App\Http\Livewire\MaintenanceComponent;
+
 use App\Http\Livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\Admin\HomeBannerComponent;
 
 
 
@@ -47,6 +49,7 @@ Route::get('/maintenance',MaintenanceComponent::class)->name('maintenance.index'
 
 Route::middleware(['auth','authadmin'])->group(function(){
     Route::get('/admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
+    Route::get('/admin/home-banner',HomeBannerComponent::class)->name('admin.home.banner');
 });
 // Route::get('/', function () {
 //     return view('welcome');
