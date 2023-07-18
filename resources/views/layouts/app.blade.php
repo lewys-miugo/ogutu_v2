@@ -9,7 +9,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <!-- <title>Moses Ogutu</title> -->
-    <title>{{ config('app.name','Moses Ogutu')}} - @yield('title')</title>
+    <title>Moses Ogutu - @yield('title')</title>
     @livewireStyles
 </head>
 <body class="bg-gray-200">
@@ -90,9 +90,24 @@
                     <li class="mb-4">
                         <a href="#" class="hover:underline">Books</a>
                     </li>
-                    <li>
-                        <a href="{{route('login')}}" class="hover:underline">Dashboard</a>
-                    </li>
+                    @auth
+                    
+                        @if(Auth::user()->utype == 'ADM')
+                        <li>
+                            <a href="{{route('admin.dashboard')}}" class="hover:underline">Dashboard-editable</a>
+                        </li>
+                        <li>
+                            <form action="{{route('logout')}}" method="post">
+                                @csrf
+                            <a href="{{route('logout')}}" class="hover:underline" onclick="event.preventDefault(); this.closest('form').submit();">logout</a>
+                            </form>
+                        </li>
+                        @else
+                        <li>
+                            <a href="{{route('login')}}" class="hover:underline">Dashboard</a>
+                        </li>
+                        @endif
+                    @endif
                 </ul>
             </div>
         </div>
