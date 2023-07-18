@@ -40,7 +40,7 @@ Route::get('/academia',AcademiaComponent::class)->name('academia.index');
 Route::get('/blog',BlogComponent::class)->name('blog.index');
 Route::get('/interest',InterestComponent::class)->name('interest.index');
 Route::get('/gallery',GalleryComponent::class)->name('gallery.index');
-Route::get('/profile',ProfileComponent::class)->name('profile.index');
+Route::get('/full-profile',ProfileComponent::class)->name('profile.index');
 Route::get('/maintenance',MaintenanceComponent::class)->name('maintenance.index');
 
 
