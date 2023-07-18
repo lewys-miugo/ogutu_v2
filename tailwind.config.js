@@ -20,6 +20,8 @@ module.exports = {
         colors: {
             bluetange: "#00063D",
             bloglink: "#EF646B",
+            editlink: "#3B82F6",
+
             orangelink: "#ffa033",
             redlink: "#fb3640",
             white:"ffffff",
