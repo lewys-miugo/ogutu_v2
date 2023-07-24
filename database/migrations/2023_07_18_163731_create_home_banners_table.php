@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('home_banners', function (Blueprint $table) {
             $table->id();
-            $table->string()->nullable();
-            $table->text()->nullable();
-            $table->
+            $table->string('name')->nullable();
+            $table->text('short_intro')->nullable();
+            $table->string('banner_img')->nullable()->comment('Banner image with no background.');
             $table->timestamps();
         });
     }
