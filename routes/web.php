@@ -17,6 +17,7 @@ use App\Http\Livewire\MaintenanceComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\HomeBannerComponent;
 use App\Http\Livewire\Admin\AdminHomeBioComponent;
+use App\Http\Livewire\Admin\AdminEditHomeBioComponent;
 
 
 
@@ -58,6 +59,8 @@ Route::middleware(['auth','authadmin'])->group(function(){
     Route::get('/admin/home-banner',HomeBannerComponent::class)->name('admin.home.banner');
 
     Route::get('/admin/admin-home-bio',AdminHomeBioComponent::class)->name('admin.home.bio');
+
+    Route::get('/admin/admin-edit-home-bio',AdminEditHomeBioComponent::class)->name('admin.edit.home.bio');
 });
 // Route::get('/', function () {
 //     return view('welcome');
