@@ -38,4 +38,17 @@ Route::get('/interest',InterestComponent::class)->name('interest.index');
 Route::get('/gallery',GalleryComponent::class)->name('gallery.index');
 Route::get('/profile',ProfileComponent::class)->name('profile.index');
 
+<!-- <script>
+        $('#home_bio').summernote({
+            placeholder: 'Hello Bootstrap 5',
+            tabsize: 2,
+            height: 300,
+            callbacks: {
+                onChange: function(contents, $editable) {
+                    @this.set('home_bio',contents);
+                }
+            }
 
+        });
+        {{-- $('#home_bio').summernote('code', '{{$returnPolicy->home_bio}}'); --}}
+    </script> -->
