@@ -11,9 +11,13 @@ use App\Http\Livewire\InterestComponent;
 use App\Http\Livewire\GalleryComponent;
 use App\Http\Livewire\ProfileComponent;
 use App\Http\Livewire\MaintenanceComponent;
+// use App\Http\Livewire\HomeBioComponent;
+
 
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\HomeBannerComponent;
+use App\Http\Livewire\Admin\AdminHomeBioComponent;
+
 
 
 
@@ -38,6 +42,7 @@ use App\Http\Livewire\Admin\HomeBannerComponent;
 // Route::get('/maintenance',MaintenanceComponent::class)->name('maintenance.index');
 
 Route::get('/',HomeComponent::class)->name('home.index');
+// Route::get('/home-bio',HomeBioComponent::class)->name('home.bio');
 Route::get('/about',AboutComponent::class)->name('about.index');
 Route::get('/academia',AcademiaComponent::class)->name('academia.index');
 Route::get('/blog',BlogComponent::class)->name('blog.index');
@@ -49,7 +54,10 @@ Route::get('/maintenance',MaintenanceComponent::class)->name('maintenance.index'
 
 Route::middleware(['auth','authadmin'])->group(function(){
     Route::get('/admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
+
     Route::get('/admin/home-banner',HomeBannerComponent::class)->name('admin.home.banner');
+
+    Route::get('/admin/admin-home-bio',AdminHomeBioComponent::class)->name('admin.home.bio');
 });
 // Route::get('/', function () {
 //     return view('welcome');

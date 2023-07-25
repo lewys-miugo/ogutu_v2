@@ -20,7 +20,7 @@
         <ul class="flex space-x-2 text-white flex-wrap divide-x">
             <!-- Navbar links -->
             <li><a href="{{route('admin.home.banner')}}" class="hover:text-bluetange font-semibold">Home-Banner</a></li>
-            <li><a href="#" class="hover:text-bluetange font-semibold pl-2">Home-Bio</a></li>
+            <li><a href="{{route('admin.home.bio')}}" class="hover:text-bluetange font-semibold pl-2">Home-Bio</a></li>
             <li><a href="#" class="hover:text-bluetange font-semibold pl-2 ">Home-About</a></li>
             <li><a href="#" class="hover:text-bluetange font-semibold pl-2 ">P-Cards</a></li>
             <li><a href="#" class="hover:text-bluetange font-semibold pl-2">About-Banner</a></li>

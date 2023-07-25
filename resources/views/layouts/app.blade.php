@@ -40,6 +40,21 @@
         <!-- <li>
           <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
         </li> -->
+        @auth
+            @if(Auth::user()->utype == 'ADM')
+                <li>
+                    <a href="{{route('admin.dashboard')}}" class="block py-2 pl-3 pr-4 text-gray-700 text-base rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Dashboard-editable</a>
+                </li>
+                <li>
+                    <form action="{{route('logout')}}" method="post">
+                        @csrf
+                    <a href="{{route('logout')}}" class="block py-2 pl-3 pr-4 text-gray-700 text-base rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" onclick="event.preventDefault(); this.closest('form').submit();">logout</a>
+                    </form>
+                </li>
+            @endif
+        @else
+        
+        @endif
       </ul>
     </div>
   </div>
@@ -90,24 +105,28 @@
                     <li class="mb-4">
                         <a href="#" class="hover:underline">Books</a>
                     </li>
-                    @auth
+                    <!-- @auth
                     
                         @if(Auth::user()->utype == 'ADM')
-                        <li>
-                            <a href="{{route('admin.dashboard')}}" class="hover:underline">Dashboard-editable</a>
-                        </li>
-                        <li>
-                            <form action="{{route('logout')}}" method="post">
-                                @csrf
-                            <a href="{{route('logout')}}" class="hover:underline" onclick="event.preventDefault(); this.closest('form').submit();">logout</a>
-                            </form>
-                        </li>
-                        @else
+                            <li>
+                                <a href="{{route('admin.dashboard')}}" class="hover:underline">Dashboard-editable</a>
+                            </li>
+                            <li>
+                                <form action="{{route('logout')}}" method="post">
+                                    @csrf
+                                <a href="{{route('logout')}}" class="hover:underline" onclick="event.preventDefault(); this.closest('form').submit();">logout</a>
+                                </form>
+                            </li>
+                        @endif
+                    @else    
                         <li>
                             <a href="{{route('login')}}" class="hover:underline">Dashboard</a>
                         </li>
-                        @endif
-                    @endif
+                        
+                    @endif -->
+                    <li>
+                        <a href="{{route('login')}}" class="hover:underline">Dashboard</a>
+                    </li>
                 </ul>
             </div>
         </div>
