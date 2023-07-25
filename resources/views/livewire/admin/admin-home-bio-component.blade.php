@@ -6,10 +6,10 @@
             <h2 class="text-sitangeh text-bluetange font-extrabold ml-14 ">Biography</h2>
 
             <div class="flex items-center flex-col pt-4 px-4">
-                <p class="my-4 lg:mx-16 text-sitange text-bluetange">
-                {{$homeBio->home_bio}}
+                <!-- <p class="my-4 lg:mx-16 text-sitange text-bluetange"> -->
+                {!! $homeBio->home_bio !!}
 
-                </p>
+                <!-- </p> -->
                 
                 <!-- <p class="my-4 lg:mx-16 text-sitange text-bluetange"> I,Moses Ogutu, have researched, designed strategies, and managed programs in multiple sectors including: trade and investment policies, education, healthcare, circular economy, blue economy, social entrepreneurship, inclusive innovation, digital technology, regional integration in Africa, governance in Africa, and private sector development. </p>
 
@@ -21,8 +21,7 @@
         </div>
 
     </div>
-    <button class="flex bg-editlink rounded-lg m-4 p-2">
-        Edit Home Bio Component
-    </button>
+    
+    <a href="{{route('admin.edit.home.bio')}}" class="flex bg-editlink rounded-lg m-4 p-2 w-fit">Edit Home Bio Component</a>
 </div>
 
