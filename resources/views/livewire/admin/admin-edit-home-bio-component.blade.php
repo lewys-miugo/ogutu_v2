@@ -2,11 +2,11 @@
     {{-- Success is as dangerous as failure. --}}
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <div class="w-96 px-4 py-8">
-        <div class="w-full mx-auto bg-white rounded-lg overflow-hidden shadow-md">
-            <div class="py-4 px-6">
+    <div class="w-full px-4 py-8">
+        <div class="w-full px-auto bg-white rounded-lg overflow-hidden shadow-md">
+            <div class="py-4  px-6">
                 <!-- <h2 class="text-2xl font-bold mb-4">return Policy</h2> -->
-                <form wire:submit.prevent="updateHomeBio">
+                <form wire:submit.prevent="updateHomeBio" class="w-full">
                     <label class="text-2xl text-center font-bold mb-4" for="home_bio">Home Biography edit</label>
 
                     <div class="mb-4">
