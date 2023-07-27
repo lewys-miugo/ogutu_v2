@@ -4,18 +4,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <div class="w-full px-4 py-8">
         <div class="w-full px-auto bg-white rounded-lg overflow-hidden shadow-md">
-            <div class="py-4  px-6">
+            <div class="py-4 w-full px-auto px-6">
                 <!-- <h2 class="text-2xl font-bold mb-4">return Policy</h2> -->
-                <form wire:submit.prevent="updateHomeBio" class="w-full">
+                <form wire:submit.prevent="updateHomeBio" class="w-full flex flex-col justify-center">
                     <label class="text-2xl text-center font-bold mb-4" for="home_bio">Home Biography edit</label>
 
-                    <div class="mb-4">
+                    <div class="mb-4 flex justify-center">
                         <!-- <h2 class="text-center underline underline-offset-2">Preview</h2>
                         <p class="mx-8">{!!$home_bio!!}</p> -->
                         <p>color: #00063d and size: heading 3</p>
                     </div>
 
-                    <div wire:ignore class="w-full h-full">
+                    <div wire:ignore class="w-full flex justify-center h-full">
                         <textarea name="home_bio" id="home_bio" wire:model="home_bio" class="w-full h-full">
                             {!! $home_bio !!}
                         </textarea>
